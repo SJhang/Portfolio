@@ -1,0 +1,36 @@
+.global-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  min-height: 80px;
+}
+
+.global-footer > .footer-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 70%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.global-footer > .footer-content > .top {
+  color: #999;
+  height: 10vh;
+  padding: 30px 0;
+  font-size: 13px;
+}
+
+.global-footer > .footer-content > .mid {
+  height: 10vh;
+  padding: 30px 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.global-footer > .footer-content > .bottom {
+
+}
