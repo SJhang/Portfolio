@@ -21521,9 +21521,9 @@
 	
 	var _app2 = _interopRequireDefault(_app);
 	
-	var _splash_page = __webpack_require__(274);
+	var _main_page = __webpack_require__(276);
 	
-	var _splash_page2 = _interopRequireDefault(_splash_page);
+	var _main_page2 = _interopRequireDefault(_main_page);
 	
 	var _about_me = __webpack_require__(275);
 	
@@ -21538,7 +21538,7 @@
 			_react2.default.createElement(
 				_reactRouter.Route,
 				{ path: '/', component: _app2.default },
-				_react2.default.createElement(_reactRouter.IndexRoute, { component: _splash_page2.default }),
+				_react2.default.createElement(_reactRouter.IndexRoute, { component: _main_page2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about_me2.default })
 			)
 		);
@@ -28803,7 +28803,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Header = function Header(_ref) {
-	  var scrollTo = _ref.scrollTo;
+	  var scrollTo = _ref.scrollTo,
+	      router = _ref.router;
 	
 	  // const directToSplash = () => {
 	  //   $(window).scrollTo('splash');
@@ -28823,10 +28824,10 @@
 	
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'global-header group' },
+	    { className: 'global-header' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'header-content group' },
+	      { className: 'header-content' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'title' },
@@ -28835,7 +28836,9 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            null,
+	            { onClick: function onClick() {
+	                return router.push('/');
+	              } },
 	            '<',
 	            _react2.default.createElement(
 	              'h4',
@@ -28909,18 +28912,16 @@
 	            '\u2044>'
 	          )
 	        )
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'fa-stack fa-lg' },
-	        _react2.default.createElement('i', { className: 'fa fa-square fa-stack-2x' }),
-	        _react2.default.createElement('i', { className: 'fa fa-terminal fa-stack-1x fa-inverse' })
 	      )
 	    )
 	  );
 	};
+	// <span className="fa-stack fa-lg">
+	//   <i className="fa fa-square fa-stack-2x"></i>
+	//   <i className="fa fa-terminal fa-stack-1x fa-inverse"></i>
+	// </span>
 	
-	exports.default = Header;
+	exports.default = (0, _reactRouter.withRouter)(Header);
 
 /***/ },
 /* 273 */
@@ -39149,28 +39150,7 @@
 
 
 /***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var SplashPage = function SplashPage(props) {
-	  return _react2.default.createElement('div', null);
-	};
-	
-	exports.default = SplashPage;
-
-/***/ },
+/* 274 */,
 /* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -39191,6 +39171,305 @@
 	};
 	
 	exports.default = AboutMe;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _intro = __webpack_require__(281);
+	
+	var _intro2 = _interopRequireDefault(_intro);
+	
+	var _projects = __webpack_require__(278);
+	
+	var _projects2 = _interopRequireDefault(_projects);
+	
+	var _assets = __webpack_require__(280);
+	
+	var _assets2 = _interopRequireDefault(_assets);
+	
+	var _about = __webpack_require__(279);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _jquery = __webpack_require__(273);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Content = function Content(props) {
+	  var componentDidMount = function componentDidMount() {
+	    (0, _jquery2.default)(document).scrollTop(0);
+	  };
+	
+	  var _scrollTo = function _scrollTo(div) {
+	    return function () {
+	      var divOffset = (0, _jquery2.default)('.' + div).offset();
+	      (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top + 10 }, 'slow');
+	    };
+	  };
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'main-content' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'contents' },
+	      _react2.default.createElement(_intro2.default, { scrollTo: function scrollTo(div) {
+	          return _scrollTo(div);
+	        } }),
+	      _react2.default.createElement(_projects2.default, { scrollTo: function scrollTo(div) {
+	          return _scrollTo(div);
+	        } }),
+	      _react2.default.createElement(_assets2.default, { scrollTo: function scrollTo(div) {
+	          return _scrollTo(div);
+	        } }),
+	      _react2.default.createElement(_about2.default, { scrollTo: function scrollTo(div) {
+	          return _scrollTo(div);
+	        } })
+	    )
+	  );
+	};
+	
+	exports.default = Content;
+
+/***/ },
+/* 277 */,
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(273);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Projects = function Projects(_ref) {
+	  var scrollTo = _ref.scrollTo;
+	
+	  var scrollPosition = (0, _jquery2.default)(window).scrollTop();
+	  var stickerIndicator = function stickerIndicator() {};
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'projects' },
+	    _react2.default.createElement('div', { className: 'stick-container' }),
+	    _react2.default.createElement('div', { className: 'meetups' }),
+	    _react2.default.createElement('div', { className: 'frozen-milk' }),
+	    _react2.default.createElement('div', { className: 'overtrack' })
+	  );
+	};
+	
+	exports.default = Projects;
+	
+	// <ul>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	// </ul>
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "about" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-content" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "About Me"
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-me" },
+	        _react2.default.createElement("img", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Hello world"
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Assets = function Assets(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "assets" },
+	    _react2.default.createElement("div", { className: "top" }),
+	    _react2.default.createElement("div", { className: "mid" }),
+	    _react2.default.createElement("div", { className: "bottom" })
+	  );
+	};
+	
+	exports.default = Assets;
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Intro = function Intro(props) {
+	  var openPdf = function openPdf() {};
+	
+	  var openAngelList = function openAngelList() {
+	    return function () {
+	      return window.open('https://www.angel.co/sonik-jhang');
+	    };
+	  };
+	
+	  var openLinkedin = function openLinkedin() {
+	    return function () {
+	      return window.open('https://www.linkedin.com/in/sonik-jhang');
+	    };
+	  };
+	
+	  var openGithub = function openGithub() {
+	    return function () {
+	      return window.open("https://github.com/SJhang");
+	    };
+	  };
+	
+	  var openEmail = function openEmail() {
+	    return function () {
+	      return window.open("mailto:sonik.jhang@utexas.edu");
+	    };
+	  };
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'splash' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'text' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'name' },
+	        'Sonik Jhang'
+	      ),
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Software Developer'
+	      ),
+	      _react2.default.createElement(
+	        'h3',
+	        null,
+	        'Living in San Francisco'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'links' },
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'fa-stack fa-lg', onClick: openPdf() },
+	        _react2.default.createElement('i', { className: 'fa fa-circle-thin fa-stack-2x', 'aria-hidden': 'true' }),
+	        _react2.default.createElement('i', { className: 'fa fa-file-pdf-o fa-stack-1x', 'aria-hidden': 'true' })
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'fa-stack fa-lg', onClick: openAngelList() },
+	        _react2.default.createElement('i', { className: 'fa fa-circle-thin fa-stack-2x', 'aria-hidden': 'true' }),
+	        _react2.default.createElement('i', { className: 'fa fa-angellist fa-stack-1x', 'aria-hidden': 'true' })
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'fa-stack fa-lg', onClick: openLinkedin() },
+	        _react2.default.createElement('i', { className: 'fa fa-circle-thin fa-stack-2x', 'aria-hidden': 'true' }),
+	        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-stack-1x', 'aria-hidden': 'true' })
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'fa-stack fa-lg', onClick: openGithub() },
+	        _react2.default.createElement('i', { className: 'fa fa-circle-thin fa-stack-2x', 'aria-hidden': 'true' }),
+	        _react2.default.createElement('i', { className: 'fa fa-github fa-stack-1x', 'aria-hidden': 'true' })
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'fa-stack fa-lg', onClick: openEmail() },
+	        _react2.default.createElement('i', { className: 'fa fa-circle-thin fa-stack-2x', 'aria-hidden': 'true' }),
+	        _react2.default.createElement('i', { className: 'fa fa-envelope-o fa-stack-1x', 'aria-hidden': 'true' })
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Intro;
 
 /***/ }
 /******/ ]);

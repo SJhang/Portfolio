@@ -4,14 +4,14 @@ import { Provider } from 'react-redux';
 
 //children
 import App from './app';
-import SplashPage from './splash_page';
+import MainPage from './main_page';
 import AboutMe from './about_me';
 
 const Root = () => {
 	return (
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
-				<IndexRoute component={SplashPage} />
+				<IndexRoute component={MainPage} />
 					<Route path="/about" component={AboutMe} />
 			</Route>
 		</Router>

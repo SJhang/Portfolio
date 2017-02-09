@@ -4,18 +4,19 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #FFF;
   box-sizing: border-box;
   min-height: 60px;
   height: 60px;
+  background-color: #FFF;
 }
+
 
 .global-header > .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
