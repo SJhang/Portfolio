@@ -27,5 +27,6 @@ module.exports = {
     alias: {
       clipboard: 'dist/clipboard'
     }
-  }
+  },
+  devServer: { inline: true }
 };
