@@ -59,7 +59,7 @@
 }
 
 
-.main-content > .contents > .splash > .links > li:hover {
+.links > li:hover {
   transform: scale(1.08);
   cursor: pointer;
 }
