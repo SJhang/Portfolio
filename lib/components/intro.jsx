@@ -3,7 +3,7 @@ import Links from './links';
 
 const Intro = (props) => {
   return (
-    <div className="splash">
+    <div className="intro">
       <div className="text">
         <h1 className="name">Sonik Jhang</h1>
         <h2>Software Developer</h2>

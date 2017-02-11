@@ -3,33 +3,61 @@ import { Link, withRouter } from 'react-router';
 import $ from 'jquery';
 
 const Header = ({scrollTo, router}) => {
-  // const directToSplash = () => {
-  //   $(window).scrollTo('splash');
-  // };
-  //
-  // const directToProjects = () => {
-  //   $(window).scrollTo('projects');
-  // };
-  //
-  // const directToAssets = () => {
-  //   $(window).scrollTo('assets');
-  // };
-  //
-  // const directToAbout = () => {
-  //   $(window).scrollTo('about');
-  // };
+  const directToIntro = () => {
+    if (location.hash.split('/')[1] === "") {
+      scrollTo('intro');
+    } else {
+      router.push('/');
+    }
+  };
+
+  const directToProjects = () => {
+    scrollTo('projects');
+  };
+
+  const directToAssets = () => {
+    scrollTo('assets');
+  };
+
+  const directToAbout = () => {
+    scrollTo('about');
+  };
+
+  const directToResume = () => {
+    return (router.push('/resume'));
+  };
 
   return (
     <div className="global-header">
       <div className="header-content">
         <div className="title">
-          <div><Link onClick={() => router.push('/')}>&lt;<h4>Portfolio</h4>&gt;</Link></div>
+          <div>
+            <Link onClick={() => directToIntro()}>
+              &lt;<h4>Portfolio</h4>&gt;
+            </Link>
+          </div>
         </div>
         <div className="menu">
-          <li><Link>&lt;<h4>Projects</h4>&#8260;&gt;</Link></li>
-          <li><Link>&lt;<h4>Assets</h4>&#8260;&gt;</Link></li>
-          <li><Link>&lt;<h4>About</h4>&#8260;&gt;</Link></li>
-          <li><Link>&lt;<h4>Contact</h4>&#8260;&gt;</Link></li>
+          <li>
+            <Link onClick={() => directToProjects()}>
+              &lt;<h4>Projects</h4>&#8260;&gt;
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => directToAssets()}>
+              &lt;<h4>Assets</h4>&#8260;&gt;
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => directToAbout()}>
+              &lt;<h4>About</h4>&#8260;&gt;
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => directToResume()}>
+              &lt;<h4>Resume</h4>&#8260;&gt;
+            </Link>
+          </li>
         </div>
       </div>
     </div>

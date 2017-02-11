@@ -29,6 +29,11 @@
   margin: 0 auto;
 }
 
+.top > .links {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
 .top > .clipboard-email {
   display: flex;
 }
@@ -104,10 +109,11 @@
 }
 
 .global-footer > .footer-content > .mid {
-  height: 10vh;
-  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 300;
 
   text-align: center;
-  line-height: normal;
   vertical-align: middle;
 }

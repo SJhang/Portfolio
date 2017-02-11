@@ -1,0 +1,153 @@
+.assets {
+  width: 100%;
+  margin: 0 auto;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title h4 {
+  color: #ac1401;
+}
+
+img:hover {
+  transform: scale(1.08);
+  cursor: context-menu;
+}
+
+.assets > .top {
+  width: 70%;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.top > .ruby {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_scale,w_90/v1486776047/ruby.svg_r4jxy5.png");
+  background-position: center;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+
+}
+
+.top > .rails {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776046/Ruby_On_Rails_Logo.svg_knotbd.png");
+  width: 90px;
+  height: 114px;
+}
+
+.top > .python {
+  background-image: url("http://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776047/Python-logo-notext.svg_aot7ik.png");
+  width: 90px;
+  height: 90px;
+}
+
+.top > .rspec {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_scale,w_60/v1486776058/22388_ppifas.png");
+  background-position: center;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+}
+
+.top > .github {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776045/Octicons-mark-github.svg_tqzahw.png");
+  width: 90px;
+  height: 90px;
+}
+
+.top > .git {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,h_90,x_0/v1486776045/Git-logo.svg_ckaupj.png");
+  height: 90px;
+  width: 215px;
+}
+
+.assets > .mid {
+  width: 70%;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mid > .js {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486794746/images_b4dnht.png");
+  width: 90px;
+  height: 90px;
+}
+
+.mid > .css {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486794746/css3_gres05.png");
+  width: 90px;
+  height: 127px;
+}
+
+.mid > .html {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,h_127,w_90/v1486776044/HTML5_logo_and_wordmark_k1h5ys.png");
+  width: 90px;
+  height: 90px;
+}
+
+.mid > .react {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,h_90,w_90/v1486776046/react_ejwt7l.png");
+  width: 90px;
+  height: 80px;
+}
+
+.mid > .psql {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776045/Postgresql_elephant_hsvdtj.png");
+  width: 90px;
+  height: 93px;
+}
+
+.mid > .mysql {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,h_90/v1486776045/logo-mysql-170x115_iij2np.png");
+  height: 90px;
+  width: 133px;
+}
+
+.mid > .jasmine {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776045/Logo_jasmine.svg_mjufdj.png");
+  width: 90px;
+  height: 90px;
+}
+
+.mid > .webpack {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486776048/webpack_slxocg.png");
+  width: 90px;
+  height: 101px;
+}
+
+
+.assets > .bot {
+  width: 70%;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bot > .node {
+  background-image: url("http://res.cloudinary.com/dsetpdsls/image/upload/c_fit,h_120/v1486794747/Node.js_logo.svg_y0pdoa.png");
+  width: 196px;
+  height: 120px;
+}
+
+.bot > .heroku {
+  background-image: url("https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_90/v1486794746/images_1_ubkskz.png");
+  width: 90px;
+  height: 141px;
+}

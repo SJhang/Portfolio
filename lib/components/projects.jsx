@@ -8,6 +8,7 @@ const Projects = ({scrollTo}) => {
 
   return (
     <div className="projects">
+      projects
       <div className="stick-container"></div>
       <div className="meetups"></div>
       <div className="frozen-milk"></div>

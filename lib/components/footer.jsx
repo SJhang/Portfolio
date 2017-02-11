@@ -1,8 +1,6 @@
 import React from 'react';
 import Links from './links';
 
-var Clipboard = require('clipboard');
-
 const Footer = (props) => {
   const email = new Clipboard('.email');
 
@@ -29,7 +27,7 @@ const Footer = (props) => {
             </span>
           </div>
         </div>
-        <div className="mid">Made by Sonik Jhang</div>
+        <div className="mid">The Digital Portfolio of Sonik Jhang</div>
       </div>
     </div>
   );

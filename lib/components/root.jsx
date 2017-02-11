@@ -6,13 +6,14 @@ import { Provider } from 'react-redux';
 import App from './app';
 import MainPage from './main_page';
 import AboutMe from './about_me';
+import Resume from './resume';
 
 const Root = () => {
 	return (
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
 				<IndexRoute component={MainPage} />
-					<Route path="/about" component={AboutMe} />
+					<Route path="/resume" component={Resume} />
 			</Route>
 		</Router>
 	);
