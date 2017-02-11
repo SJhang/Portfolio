@@ -21521,11 +21521,11 @@
 	
 	var _app2 = _interopRequireDefault(_app);
 	
-	var _main_page = __webpack_require__(276);
+	var _main_page = __webpack_require__(274);
 	
 	var _main_page2 = _interopRequireDefault(_main_page);
 	
-	var _about_me = __webpack_require__(275);
+	var _about_me = __webpack_require__(279);
 	
 	var _about_me2 = _interopRequireDefault(_about_me);
 	
@@ -39150,8 +39150,7 @@
 
 
 /***/ },
-/* 274 */,
-/* 275 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39164,41 +39163,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var AboutMe = function AboutMe(props) {
-	  return _react2.default.createElement('div', null);
-	};
-	
-	exports.default = AboutMe;
-
-/***/ },
-/* 276 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _intro = __webpack_require__(281);
+	var _intro = __webpack_require__(275);
 	
 	var _intro2 = _interopRequireDefault(_intro);
 	
-	var _projects = __webpack_require__(278);
+	var _projects = __webpack_require__(276);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _assets = __webpack_require__(280);
+	var _assets = __webpack_require__(277);
 	
 	var _assets2 = _interopRequireDefault(_assets);
 	
-	var _about = __webpack_require__(279);
+	var _about = __webpack_require__(278);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
@@ -39245,130 +39222,7 @@
 	exports.default = Content;
 
 /***/ },
-/* 277 */,
-/* 278 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _jquery = __webpack_require__(273);
-	
-	var _jquery2 = _interopRequireDefault(_jquery);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Projects = function Projects(_ref) {
-	  var scrollTo = _ref.scrollTo;
-	
-	  var scrollPosition = (0, _jquery2.default)(window).scrollTop();
-	  var stickerIndicator = function stickerIndicator() {};
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'projects' },
-	    _react2.default.createElement('div', { className: 'stick-container' }),
-	    _react2.default.createElement('div', { className: 'meetups' }),
-	    _react2.default.createElement('div', { className: 'frozen-milk' }),
-	    _react2.default.createElement('div', { className: 'overtrack' })
-	  );
-	};
-	
-	exports.default = Projects;
-	
-	// <ul>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	// </ul>
-
-/***/ },
-/* 279 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var About = function About(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "about" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "about-content" },
-	      _react2.default.createElement(
-	        "h1",
-	        null,
-	        "About Me"
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "about-me" },
-	        _react2.default.createElement("img", null),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Hello world"
-	        )
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = About;
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Assets = function Assets(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "assets" },
-	    _react2.default.createElement("div", { className: "top" }),
-	    _react2.default.createElement("div", { className: "mid" }),
-	    _react2.default.createElement("div", { className: "bottom" })
-	  );
-	};
-	
-	exports.default = Assets;
-
-/***/ },
-/* 281 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39470,6 +39324,150 @@
 	};
 	
 	exports.default = Intro;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(273);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Projects = function Projects(_ref) {
+	  var scrollTo = _ref.scrollTo;
+	
+	  var scrollPosition = (0, _jquery2.default)(window).scrollTop();
+	  var stickerIndicator = function stickerIndicator() {};
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'projects' },
+	    _react2.default.createElement('div', { className: 'stick-container' }),
+	    _react2.default.createElement('div', { className: 'meetups' }),
+	    _react2.default.createElement('div', { className: 'frozen-milk' }),
+	    _react2.default.createElement('div', { className: 'overtrack' })
+	  );
+	};
+	
+	exports.default = Projects;
+	
+	// <ul>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	//   <li className="circle">
+	//     <i className="fa fa-circle-o" aria-hidden="true"/>
+	//   </li>
+	// </ul>
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Assets = function Assets(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "assets" },
+	    _react2.default.createElement("div", { className: "top" }),
+	    _react2.default.createElement("div", { className: "mid" }),
+	    _react2.default.createElement("div", { className: "bottom" })
+	  );
+	};
+	
+	exports.default = Assets;
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "about" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-content" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "About Me"
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "about-me" },
+	        _react2.default.createElement("img", null),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Hello world"
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AboutMe = function AboutMe(props) {
+	  return _react2.default.createElement('div', null);
+	};
+	
+	exports.default = AboutMe;
 
 /***/ }
 /******/ ]);
