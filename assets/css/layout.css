@@ -16,22 +16,6 @@ main {
 	padding-top: 60px;
 }
 
-button {
-	color: black;
-	font-weight: bold;
-	padding: 7px 9px;
-	border-radius: 3px;
-	text-transform: uppercase;
-	font-size: 11px;
-	text-align: center;
-}
-
-button:hover {
-	background-color: gray;
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
 a {
 	cursor: pointer;
 }

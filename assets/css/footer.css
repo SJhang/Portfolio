@@ -6,31 +6,108 @@
   z-index: 999;
   box-sizing: border-box;
   min-height: 80px;
+  color: white;
+  background: rgba(0, 0, 0, 1);
+  padding: 20px 0;
 }
 
 .global-footer > .footer-content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 70%;
-  max-width: 70%;
+  min-width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .global-footer > .footer-content > .top {
-  color: #999;
-  height: 10vh;
-  padding: 30px 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top > .clipboard-email {
+  display: flex;
+}
+
+.top input {
+  width: 200px;
+  min-height: 33px;
+  padding: 0 8px;
   font-size: 13px;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  margin: 0;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+}
+
+.top input:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.top .clipboard-button {
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+  height: 34px;
+}
+
+.top .email {
+  position: relative;
+  display: inline-block;
+  padding: 11px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc,#eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: none;
+}
+
+.top > .email:hover {
+
+}
+
+.top .clippy {
+  margin-top: -3px;
+  position: relative;
+  width: 13px;
+  top: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  white-space: nowrap;
 }
 
 .global-footer > .footer-content > .mid {
   height: 10vh;
-  padding: 30px 0;
   font-size: 13px;
-  color: #999;
-}
 
-.global-footer > .footer-content > .bottom {
-
+  text-align: center;
+  line-height: normal;
+  vertical-align: middle;
 }

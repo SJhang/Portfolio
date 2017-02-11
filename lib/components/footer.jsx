@@ -1,14 +1,33 @@
 import React from 'react';
+import Links from './links';
+
+var Clipboard = require('clipboard');
 
 const Footer = (props) => {
+  const email = new Clipboard('.email');
+
   return (
     <div className="global-footer">
       <div className="footer-content">
         <div className="top">
-          <button className="btn"
-            data-clipboard-target="sonik.jhang@utexas.edu"
-            value="copy to clipboard">
-          </button>
+          <Links />
+          <div className="clipboard-email">
+            <input
+              id="email"
+              type="text"
+              defaultValue="sonik.jhang@utexas.edu"/>
+            <span className="clipboard-button">
+              <button
+                className="email"
+                data-clipboard-target="#email"
+                data-clipboard-action="copy">
+                <img
+                  className="clippy"
+                  src="assets/clippy.svg"
+                  alt="Copy to clipboard"></img>
+              </button>
+            </span>
+          </div>
         </div>
         <div className="mid">Made by Sonik Jhang</div>
       </div>
