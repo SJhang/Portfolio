@@ -8,7 +8,7 @@ const App = ({ children }) => {
   const scrollTo = (div) => {
     let divOffset = $(`.${div}`).offset();
     return (
-      $('html, body').animate({ scrollTop: (divOffset.top + 10) }, 'slow')
+      $('html, body').animate({ scrollTop: (divOffset.top - 60) }, 'slow')
     );
   };
 

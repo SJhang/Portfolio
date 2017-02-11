@@ -13,8 +13,8 @@ const Root = () => {
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
 				<IndexRoute component={MainPage} />
-					<Route path="/resume" component={Resume} />
 			</Route>
+			<Route path="/resume" component={Resume} />
 		</Router>
 	);
 };

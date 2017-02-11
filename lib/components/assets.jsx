@@ -3,7 +3,7 @@ import React from 'react';
 const Assets = ({scrollTo}) => {
   return (
     <div className="assets">
-      <div className="title">&lt;<h4>Assets</h4>&gt;</div>
+      <div className="title">&lt;<h4>assets</h4>&gt;</div>
       <div className="top">
         <img className="ruby"></img>
         <img className="rails"></img>
@@ -27,7 +27,7 @@ const Assets = ({scrollTo}) => {
         <img className="heroku"></img>
       </div>
       <div className="title">
-        &lt;<h4>Assets</h4>&#8260;&gt;
+        &lt;<h4>assets</h4>&#8260;&gt;
       </div>
     </div>
   );

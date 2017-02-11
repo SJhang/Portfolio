@@ -21547,9 +21547,9 @@
 			_react2.default.createElement(
 				_reactRouter.Route,
 				{ path: '/', component: _app2.default },
-				_react2.default.createElement(_reactRouter.IndexRoute, { component: _main_page2.default }),
-				_react2.default.createElement(_reactRouter.Route, { path: '/resume', component: _resume2.default })
-			)
+				_react2.default.createElement(_reactRouter.IndexRoute, { component: _main_page2.default })
+			),
+			_react2.default.createElement(_reactRouter.Route, { path: '/resume', component: _resume2.default })
 		);
 	};
 	
@@ -28735,7 +28735,7 @@
 	
 	  var _scrollTo = function _scrollTo(div) {
 	    var divOffset = (0, _jquery2.default)('.' + div).offset();
-	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top + 10 }, 'slow');
+	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top - 60 }, 'slow');
 	  };
 	
 	  return _react2.default.createElement(
@@ -39437,11 +39437,32 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'projects' },
-	    'projects',
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'title' },
+	      '<',
+	      _react2.default.createElement(
+	        'h4',
+	        null,
+	        'projects'
+	      ),
+	      '>'
+	    ),
 	    _react2.default.createElement('div', { className: 'stick-container' }),
 	    _react2.default.createElement('div', { className: 'meetups' }),
 	    _react2.default.createElement('div', { className: 'frozen-milk' }),
-	    _react2.default.createElement('div', { className: 'overtrack' })
+	    _react2.default.createElement('div', { className: 'overtrack' }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'title' },
+	      '<',
+	      _react2.default.createElement(
+	        'h4',
+	        null,
+	        'projects'
+	      ),
+	      '\u2044>'
+	    )
 	  );
 	};
 	
@@ -39488,7 +39509,7 @@
 	      _react2.default.createElement(
 	        "h4",
 	        null,
-	        "Assets"
+	        "assets"
 	      ),
 	      ">"
 	    ),
@@ -39527,7 +39548,7 @@
 	      _react2.default.createElement(
 	        "h4",
 	        null,
-	        "Assets"
+	        "assets"
 	      ),
 	      "\u2044>"
 	    )
@@ -39556,25 +39577,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "about" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "about-content" },
-	      _react2.default.createElement(
-	        "h1",
-	        null,
-	        "About Me"
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "about-me" },
-	        _react2.default.createElement("img", null),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Hello world"
-	        )
-	      )
-	    )
+	    _react2.default.createElement("div", { className: "about-content" })
 	  );
 	};
 	
