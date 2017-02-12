@@ -135,22 +135,9 @@ const Projects = ({scrollTo}) => {
           </div>
           <div className="overview"></div>
         </div>
-
       </div>
     </div>
   );
 };
 
 export default Projects;
-
-// <ul>
-//   <li className="circle">
-//     <i className="fa fa-circle-o" aria-hidden="true"/>
-//   </li>
-//   <li className="circle">
-//     <i className="fa fa-circle-o" aria-hidden="true"/>
-//   </li>
-//   <li className="circle">
-//     <i className="fa fa-circle-o" aria-hidden="true"/>
-//   </li>
-// </ul>

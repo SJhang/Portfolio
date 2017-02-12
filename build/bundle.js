@@ -21529,7 +21529,7 @@
 	
 	var _main_page2 = _interopRequireDefault(_main_page);
 	
-	var _resume = __webpack_require__(281);
+	var _resume = __webpack_require__(280);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
@@ -39759,18 +39759,6 @@
 	};
 	
 	exports.default = Projects;
-	
-	// <ul>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	//   <li className="circle">
-	//     <i className="fa fa-circle-o" aria-hidden="true"/>
-	//   </li>
-	// </ul>
 
 /***/ },
 /* 278 */
@@ -40076,8 +40064,7 @@
 	exports.default = About;
 
 /***/ },
-/* 280 */,
-/* 281 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
