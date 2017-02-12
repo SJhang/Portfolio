@@ -1,13 +1,14 @@
 .assets {
   width: 100%;
   margin: 0 auto;
-  height: 600px;
+  height: 700px;
   box-sizing: border-box;
 }
 
 .title {
   text-align: center;
   font-size: 25px;
+  line-height: 100px;
   font-weight: 400;
   display: flex;
   width: 80%;
@@ -18,7 +19,44 @@
   color: #ac1401;
 }
 
-img:hover {
+.top .follower {
+  display: none;
+  position: relative;
+}
+
+.mid .follower {
+  display: none;
+  position: relative;
+}
+
+.bot .follower {
+  display: none;
+  position: relative;
+}
+
+.top:hover .follower {
+  display: block;
+}
+
+.mid:hover .follower {
+  display: block;
+}
+
+.bot:hover .follower {
+  display: block;
+}
+
+.top div:hover {
+  transform: scale(1.08);
+  cursor: context-menu;
+}
+
+.mid div:hover {
+  transform: scale(1.08);
+  cursor: context-menu;
+}
+
+.bot div:hover {
   transform: scale(1.08);
   cursor: context-menu;
 }
@@ -30,6 +68,7 @@ img:hover {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .top > .ruby {
@@ -80,6 +119,7 @@ img:hover {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .mid > .js {
@@ -138,6 +178,7 @@ img:hover {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .bot > .node {

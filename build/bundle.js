@@ -39484,7 +39484,7 @@
 /* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -39494,63 +39494,230 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _jquery = __webpack_require__(274);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Assets = function Assets(_ref) {
 	  var scrollTo = _ref.scrollTo;
 	
+	  var showName = function showName(name) {
+	    var mouseX = 0,
+	        mouseY = 0,
+	        limitX = 15,
+	        limitY = 15;
+	
+	    //cache the selector
+	    var follower = null;
+	    var xp = 0,
+	        yp = 0;
+	
+	    (0, _jquery2.default)(window).mousemove(function (e) {
+	      var $elem = (0, _jquery2.default)(document.elementFromPoint(e.pageX, e.pageY));
+	
+	      if ($elem.attr("class") === '' + name) {
+	        var offset = $elem.offset();
+	
+	        mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
+	        mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
+	
+	        if (mouseX < 0) mouseX = 0;
+	        if (mouseY < 0) mouseY = 0;
+	
+	        xp += (mouseX - xp) / 12;
+	        yp += (mouseY - yp) / 12;
+	
+	        var loop = setInterval(function () {
+	          $elem.find('.follower').css({ left: xp, top: yp });
+	        }, 30);
+	      }
+	    });
+	  };
+	
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "assets" },
+	    'div',
+	    { className: 'assets' },
 	    _react2.default.createElement(
-	      "div",
-	      { className: "title" },
-	      "<",
+	      'div',
+	      { className: 'title' },
+	      '<',
 	      _react2.default.createElement(
-	        "h4",
+	        'h4',
 	        null,
-	        "assets"
+	        'assets'
 	      ),
-	      ">"
+	      '>'
 	    ),
 	    _react2.default.createElement(
-	      "div",
-	      { className: "top" },
-	      _react2.default.createElement("img", { className: "ruby" }),
-	      _react2.default.createElement("img", { className: "rails" }),
-	      _react2.default.createElement("img", { className: "rspec" }),
-	      _react2.default.createElement("img", { className: "python" }),
-	      _react2.default.createElement("img", { className: "github" }),
-	      _react2.default.createElement("img", { className: "git" })
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "mid" },
-	      _react2.default.createElement("img", { className: "react" }),
-	      _react2.default.createElement("img", { className: "js" }),
-	      _react2.default.createElement("img", { className: "css" }),
-	      _react2.default.createElement("img", { className: "html" }),
-	      _react2.default.createElement("img", { className: "psql" }),
-	      _react2.default.createElement("img", { className: "mysql" }),
-	      _react2.default.createElement("img", { className: "jasmine" }),
-	      _react2.default.createElement("img", { className: "webpack" })
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "bot" },
-	      _react2.default.createElement("img", { className: "node" }),
-	      _react2.default.createElement("img", { className: "heroku" })
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "title" },
-	      "<",
+	      'div',
+	      { className: 'top' },
 	      _react2.default.createElement(
-	        "h4",
-	        null,
-	        "assets"
+	        'div',
+	        { className: 'ruby', onMouseOver: function onMouseOver() {
+	            return showName("ruby");
+	          } },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Ruby'
+	        )
 	      ),
-	      "\u2044>"
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'rails' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Ruby on Rails'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'rspec' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Rspec'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'python' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Python'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'github' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'GitHub'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'git' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Git'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'mid' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'react' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'React'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'js' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'JavaScript'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'css' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'CSS'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'html' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'HTML'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'psql' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'PostgreSQL'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'mysql' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'MySQL'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'jasmine' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Jasmine'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'webpack' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Webpack'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'bot' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'node' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'NodeJS'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'heroku' },
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'follower' },
+	          'Heroku'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'title' },
+	      '<',
+	      _react2.default.createElement(
+	        'h4',
+	        null,
+	        'assets'
+	      ),
+	      '\u2044>'
 	    )
 	  );
 	};
@@ -39577,7 +39744,40 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "about" },
-	    _react2.default.createElement("div", { className: "about-content" })
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-title" },
+	      "Sonik Jhang"
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "about-content" },
+	      _react2.default.createElement("img", { className: "about-pic" }),
+	      _react2.default.createElement(
+	        "span",
+	        { className: "blurb" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I am a full stack web developer. Passionate about building beautiful and efficient websites."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "After graduating from UT Austin, I have studied my own and attended full time courses to pursue my desire for learning programming languages and new technologies."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I am currently looking for a Software Developer position where I can apply my programming skills to solve any challenges that can be thrown at me."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Besides from coding, I love trying out new food and different beers around the world. I enjoy playing golf, basketball, snowboarding, and lifting. Also love traveling to new places to learn and experience cultures out there."
+	        )
+	      )
+	    )
 	  );
 	};
 	
