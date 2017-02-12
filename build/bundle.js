@@ -21529,17 +21529,12 @@
 	
 	var _main_page2 = _interopRequireDefault(_main_page);
 	
-	var _about_me = __webpack_require__(280);
-	
-	var _about_me2 = _interopRequireDefault(_about_me);
-	
 	var _resume = __webpack_require__(281);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	//children
 	var Root = function Root() {
 		return _react2.default.createElement(
 			_reactRouter.Router,
@@ -21553,6 +21548,7 @@
 		);
 	};
 	
+	//children
 	exports.default = Root;
 
 /***/ },
@@ -28735,7 +28731,7 @@
 	
 	  var _scrollTo = function _scrollTo(div) {
 	    var divOffset = (0, _jquery2.default)('.' + div).offset();
-	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top - 60 }, 'slow');
+	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top - 10 }, 'slow');
 	  };
 	
 	  return _react2.default.createElement(
@@ -39438,30 +39434,242 @@
 	    'div',
 	    { className: 'projects' },
 	    _react2.default.createElement(
-	      'div',
-	      { className: 'title' },
-	      '<',
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'projects'
-	      ),
-	      '>'
+	      'h1',
+	      { className: 'title-project' },
+	      'Projects'
 	    ),
-	    _react2.default.createElement('div', { className: 'stick-container' }),
-	    _react2.default.createElement('div', { className: 'meetups' }),
-	    _react2.default.createElement('div', { className: 'frozen-milk' }),
-	    _react2.default.createElement('div', { className: 'overtrack' }),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'title' },
-	      '<',
+	      { className: 'project-div' },
 	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'projects'
+	        'div',
+	        { className: 'meetups' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'description' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'project-name' },
+	            'MeetUps'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project-blurb' },
+	            'Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user\'s location to find events nearby.'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'project-assets' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Ruby'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Rails'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'JavaScript'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'jQuery'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'React'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Redux'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'PostgreSQL'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Webpack'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Git'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'SASS'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'HTML5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Heroku'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'overview' })
 	      ),
-	      '\u2044>'
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'frozen-milk' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'description' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'project-name' },
+	            'Frozen Milk'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project-blurb' },
+	            'Frozen Milk is an interactive web browser game built using JavaScript, HTML5 Canvas, and CreateJS. Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score.'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'project-assets' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'JavaScript'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'jQuery'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'CreatJS'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'CSS'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'HTML5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Git'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Webpack'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'overview' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'overtrack' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'description' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'project-name' },
+	            'Overtrack'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project-blurb' },
+	            'Overtrack is a single-page web applicatoin analyzing player statistics for League of Legends. It uses Riot\'s public API to collect data from tens of thousands of players and allow user\'s to view it. I strongly leveraged PostgreSQL json data type to seamlessly store and serve large amounts of data. Implemented Redis on Ruby on Rails to cut response times by more than 70%.'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'project-assets' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Ruby'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Rails'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'JavaScript'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Redis'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'jQuery'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'React'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Redux'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'PostgreSQL'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Webpack'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Git'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'CSS'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'HTML5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Heroku'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'overview' })
+	      )
 	    )
 	  );
 	};
@@ -39784,28 +39992,7 @@
 	exports.default = About;
 
 /***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var AboutMe = function AboutMe(props) {
-	  return _react2.default.createElement('div', null);
-	};
-	
-	exports.default = AboutMe;
-
-/***/ },
+/* 280 */,
 /* 281 */
 /***/ function(module, exports, __webpack_require__) {
 

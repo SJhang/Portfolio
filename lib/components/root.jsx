@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 //children
 import App from './app';
 import MainPage from './main_page';
-import AboutMe from './about_me';
 import Resume from './resume';
 
 const Root = () => {
