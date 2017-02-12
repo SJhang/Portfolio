@@ -48,6 +48,22 @@
   font-size: 28px;
   font-weight: 100;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links i {
+  cursor: pointer;
+}
+
+.project-links i:hover {
+  transform: scale(1.04);
 }
 
 .description {

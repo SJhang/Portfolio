@@ -6,13 +6,49 @@ const Projects = ({scrollTo}) => {
   const stickerIndicator = () => {
   };
 
+  const directToMeetup = () => {
+    return window.open("https://meet-ups.herokuapp.com/#/");
+  };
+
+  const directToMeetupGithub = () => {
+    return window.open("https://github.com/SJhang/Meetups");
+  };
+
+  const directToFrozen = () => {
+    return window.open("https://sjhang.github.io/Frozen-Milk/");
+  };
+
+  const directToFrozenGitHub = () => {
+    return window.open("https://github.com/SJhang/Frozen-Milk");
+  };
+
+  const directToOvertrack = () => {
+    return window.open("http://www.overtrack.win/");
+  };
+
+  const directToOvertrackGithub = () => {
+    return window.open("https://github.com/Sebastiansc/Overtrack");
+  };
+
   return (
     <div className="projects">
       <h1 className="title-project">Projects</h1>
       <div className="project-div">
         <div className="meetups">
           <div className="description">
-            <div className="project-name">MeetUps</div>
+            <div className="project-name">
+              <h1>MeetUps</h1>
+              <div className="project-links">
+                <i
+                  className="fa fa-github fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToMeetupGithub()}/>
+                <i
+                  className="fa fa-globe fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToMeetup()}/>
+              </div>
+            </div>
             <p className="project-blurb">
               Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user's location to find events nearby.
             </p>
@@ -35,7 +71,19 @@ const Projects = ({scrollTo}) => {
         </div>
         <div className="frozen-milk">
           <div className="description">
-            <div className="project-name">Frozen Milk</div>
+            <div className="project-name">
+              <h1>Frozen Milk</h1>
+              <div className="project-links">
+                <i
+                  className="fa fa-github fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToFrozenGitHub()}/>
+                <i
+                  className="fa fa-globe fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToFrozen()}/>
+              </div>
+            </div>
             <p className="project-blurb">
               Frozen Milk is an interactive web browser game built using JavaScript, HTML5 Canvas, and CreateJS. Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score.
             </p>
@@ -53,7 +101,19 @@ const Projects = ({scrollTo}) => {
         </div>
         <div className="overtrack">
           <div className="description">
-            <div className="project-name">Overtrack</div>
+            <div className="project-name">
+              <h1>Overtrack</h1>
+              <div className="project-links">
+                <i
+                  className="fa fa-github fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToOvertrackGithub()}/>
+                <i
+                  className="fa fa-globe fa-1x"
+                  aria-hidden="true"
+                  onClick={() => directToOvertrack()}/>
+              </div>
+            </div>
             <p className="project-blurb">
               Overtrack is a single-page web applicatoin analyzing player statistics for League of Legends. It uses Riot's public API to collect data from tens of thousands of players and allow user's to view it. I strongly leveraged PostgreSQL json data type to seamlessly store and serve large amounts of data. Implemented Redis on Ruby on Rails to cut response times by more than 70%.
             </p>

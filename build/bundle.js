@@ -39430,6 +39430,30 @@
 	  var scrollPosition = (0, _jquery2.default)(window).scrollTop();
 	  var stickerIndicator = function stickerIndicator() {};
 	
+	  var directToMeetup = function directToMeetup() {
+	    return window.open("https://meet-ups.herokuapp.com/#/");
+	  };
+	
+	  var directToMeetupGithub = function directToMeetupGithub() {
+	    return window.open("https://github.com/SJhang/Meetups");
+	  };
+	
+	  var directToFrozen = function directToFrozen() {
+	    return window.open("https://sjhang.github.io/Frozen-Milk/");
+	  };
+	
+	  var directToFrozenGitHub = function directToFrozenGitHub() {
+	    return window.open("https://github.com/SJhang/Frozen-Milk");
+	  };
+	
+	  var directToOvertrack = function directToOvertrack() {
+	    return window.open("http://www.overtrack.win/");
+	  };
+	
+	  var directToOvertrackGithub = function directToOvertrackGithub() {
+	    return window.open("https://github.com/Sebastiansc/Overtrack");
+	  };
+	
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'projects' },
@@ -39450,7 +39474,27 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'project-name' },
-	            'MeetUps'
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'MeetUps'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-links' },
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-github fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToMeetupGithub();
+	                } }),
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-globe fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToMeetup();
+	                } })
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -39533,7 +39577,27 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'project-name' },
-	            'Frozen Milk'
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'Frozen Milk'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-links' },
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-github fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToFrozenGitHub();
+	                } }),
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-globe fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToFrozen();
+	                } })
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -39591,7 +39655,27 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'project-name' },
-	            'Overtrack'
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'Overtrack'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'project-links' },
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-github fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToOvertrackGithub();
+	                } }),
+	              _react2.default.createElement('i', {
+	                className: 'fa fa-globe fa-1x',
+	                'aria-hidden': 'true',
+	                onClick: function onClick() {
+	                  return directToOvertrack();
+	                } })
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',
