@@ -40067,7 +40067,7 @@
 /* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -40080,10 +40080,703 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Resume = function Resume(props) {
-	  return _react2.default.createElement('div', null);
+	  var directToMeetup = function directToMeetup() {
+	    return window.open("https://meet-ups.herokuapp.com/#/");
+	  };
+	
+	  var directToMeetupGithub = function directToMeetupGithub() {
+	    return window.open("https://github.com/SJhang/Meetups");
+	  };
+	
+	  var directToFrozen = function directToFrozen() {
+	    return window.open("https://sjhang.github.io/Frozen-Milk/");
+	  };
+	
+	  var directToFrozenGitHub = function directToFrozenGitHub() {
+	    return window.open("https://github.com/SJhang/Frozen-Milk");
+	  };
+	
+	  var directToOvertrack = function directToOvertrack() {
+	    return window.open("http://www.overtrack.win/");
+	  };
+	
+	  var directToOvertrackGithub = function directToOvertrackGithub() {
+	    return window.open("https://github.com/Sebastiansc/Overtrack");
+	  };
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "resume" },
+	    _react2.default.createElement(
+	      "header",
+	      { className: "resume-header" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "photo" },
+	        _react2.default.createElement("img", { className: "headshot" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "info" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "SONIK JHANG"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "SOFTWARE ENGINEER"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Front-end developer passionate about using cutting edge technologies like React and node.js to build fluid and responsive web applications. Fluent in Ruby, JavaScript, Python and Korean. Get in touch to work together on your next project. "
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "resume-content" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "left-content" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "resume-projects" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "PROJECTS"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "projects-detail" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "resume-meetups" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "box-line" }),
+	                _react2.default.createElement("div", { className: "line-circle" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "MeetUps"
+	                ),
+	                _react2.default.createElement(
+	                  "ul",
+	                  { className: "project-assets" },
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "Rails"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "React/Redux"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "PostgreSQL"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "project-links" },
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-github fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToMeetupGithub();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Github"
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-globe fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToMeetup();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Live"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "resume-blurb" },
+	                  "Single-page application for people with similar interests to create groups and RSVP to events inspired by Meetup.com"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "features" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Utilized the unidirectional data flow of Redux architecture for reliable DOM rendering"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Leveraged GoogleMap\u2019s open source API to implement typo\xAD-proof auto completion search. User input is cross checked with possible results and most applicable location is chosen"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Implemented custom authentication on the database level using SecureRandom Hashing and BCrypt and on the front-end by bootstrapping current user"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Created and instantaneous search by combining asynchronous AJAX requests with Redux state slice update"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "resume-frozen-milk" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-two" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "line-circle-two" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "Frozen Milk"
+	                ),
+	                _react2.default.createElement(
+	                  "ul",
+	                  { className: "project-assets" },
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "JavaScript"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "HTML5 Canvas"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "CreateJS"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "project-links" },
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-github fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToFrozenGitHub();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Github"
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-globe fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToFrozen();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Live"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "resume-blurb" },
+	                  "JavaScript based browser game built from scratch with CreateJS and HTML5 Canvas"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "features" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Rendered animations reliably with a combination of Spritesheet on an HTML5 Canvas"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "resume-overtrack" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-three" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "line-circle-three" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "Overtrack"
+	                ),
+	                _react2.default.createElement(
+	                  "ul",
+	                  { className: "project-assets" },
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "Rails"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "ReactRedux"
+	                  ),
+	                  _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    "PostgreSQL"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "project-links" },
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-github fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToOvertrackGithub();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Github"
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "i",
+	                    {
+	                      className: "fa fa-globe fa-3x",
+	                      "aria-hidden": "true",
+	                      onClick: function onClick() {
+	                        return directToOvertrack();
+	                      } },
+	                    _react2.default.createElement(
+	                      "h4",
+	                      null,
+	                      "\xA0Live"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "project-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "resume-blurb" },
+	                  "Single-page web application using League of Legends API for player statistics"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "features" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Utilized public network API offered by Riot to access consistent and accurate data of < 20 million users"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Created Rake Tasks to do Cron jobs which automatically fetch and update data to better user experience by assuring only most up-to-date stats are displayed and old data is erased from the server"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Maximized output by utilizing version control and practiced DRY coding"
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "resume-experience" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "EXPERIENCE"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "experience-detail" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "china-pacific" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-four" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "box-line" }),
+	                _react2.default.createElement("div", { className: "line-circle-four" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "China Pacific"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "exp-length" },
+	                  "Sept 2014 - May 2016"
+	                )
+	              ),
+	              _react2.default.createElement("div", { className: "exp-details" })
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "LLC" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-five" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "box-line" }),
+	                _react2.default.createElement("div", { className: "line-circle-five" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "LLC"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "exp-length" },
+	                  "June 2009 - Mar 2011"
+	                )
+	              ),
+	              _react2.default.createElement("div", { className: "exp-details" })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "right-content" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "skills" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "MY SKILLS"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "skills-detail" },
+	            _react2.default.createElement(
+	              "ul",
+	              null,
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "RUBY"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "RAILS"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "RSPEC"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "CAPYBARA"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "SQL"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "REDIS"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "HEROKU"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "GIT"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "GITHUB"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "HTML 5"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "PROCESSING 3"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "WEBPACK"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "JQUERY"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "SASS"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              null,
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "JAVASCRIPT"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "NODE.JS"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "REACT/REDUX"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "PYTHON"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "CSS 3"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "D3.JS"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "MYSQL"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "JASMINE"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "CREATE.JS"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "education" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "EDUCATION"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "education-divs" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "appAcademy" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "APP ACADEMY"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "1000-hour full-stack web development program with < 3% acceptance rate"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "Emphasis on pair programming, algorithm, and Test Driven Development (TDD)"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "utAustin" },
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "University of Texas at Austin"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "B.A. Economics and Minor in Computer Science"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "resume-contact" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "CONTACT ME"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "744 Overture Ct. San Jose, CA 95134"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "806 w 24th St. Austin, TX 78705"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "512 850 - 2709"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "sonik.jhang@utexas.edu"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "www.sonikjhang.com"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "www.linkedin.com/in/sonikjhang"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "www.github.com/SJhang"
+	          )
+	        )
+	      )
+	    )
+	  );
 	};
 	
 	exports.default = Resume;
+	
+	// <div className="resume-portfolio">
+	//   <div className="project-title">
+	//     <div className="name">Portfolio</div>
+	//     <ul className="project-assets">
+	//       <li>JavaScript</li>
+	//       <li>jQuery</li>
+	//       <li>HTML5&#47;CSS3</li>
+	//     </ul>
+	//     <div className="links"></div>
+	//   </div>
+	//   <div className="project-details">
+	//     <div className="resume-blurb">
+	//       The digital portfolio of Sonik Jhang
+	//     </div>
+	//     <div className="features">
+	//       <span></span>
+	//     </div>
+	//   </div>
+	// </div>
 
 /***/ }
 /******/ ]);
