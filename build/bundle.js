@@ -28834,7 +28834,9 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Links = function Links(props) {
-	  var openPdf = function openPdf() {};
+	  var openPdf = function openPdf() {
+	    return window.open("assets/resume.pdf");
+	  };
 	
 	  var openAngelList = function openAngelList() {
 	    return window.open('https://www.angel.co/sonik-jhang');

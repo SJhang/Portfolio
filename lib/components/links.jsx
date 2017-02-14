@@ -2,7 +2,7 @@ import React from 'react';
 
 const Links = (props) => {
   const openPdf = () => {
-
+    return window.open("assets/resume.pdf");
   };
 
   const openAngelList = () => {
