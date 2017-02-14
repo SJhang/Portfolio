@@ -20,7 +20,7 @@
   margin: 0 auto;
 }
 
-.global-footer > .footer-content > .top {
+.footer-top {
   display: flex;
   align-items: flex-end;
   padding: 10px 0;
@@ -29,16 +29,17 @@
   margin: 0 auto;
 }
 
-.top > .links {
+.footer-top > .links {
   width: 260px;
   display: flex;
   justify-content: space-between;
 }
-.top > .clipboard-email {
+.footer-top > .clipboard-email {
   display: flex;
+  transition: none;
 }
 
-.top input {
+.footer-top input {
   width: 200px;
   min-height: 33px;
   padding: 0 8px;
@@ -55,23 +56,23 @@
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
 }
 
-.top input:first-child {
+.footer-top input:first-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
 }
 
-.top .clipboard-button {
+.footer-top .clipboard-button {
   width: 1%;
   vertical-align: middle;
   display: table-cell;
   height: 34px;
 }
 
-.top .email {
+.footer-top .email {
   position: relative;
   display: inline-block;
-  padding: 11px 12px;
+  padding: 9px 11px;
   font-size: 13px;
   font-weight: bold;
   color: #333;
@@ -90,13 +91,14 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   text-transform: none;
+  height: 35px;
 }
 
-.top > .email:hover {
+.footer-top > .email:hover {
 
 }
 
-.top .clippy {
+.footer-top .clippy {
   margin-top: -3px;
   position: relative;
   width: 13px;

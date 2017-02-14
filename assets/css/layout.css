@@ -46,4 +46,5 @@ small {
 
 .app {
 	margin: 0 auto;
+	position: relative;
 }

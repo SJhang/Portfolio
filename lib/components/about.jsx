@@ -4,11 +4,14 @@ const About = (props) => {
   return (
     <div className="about">
       <div className="about-title">
-        Sonik Jhang
+        ABOUT ME
       </div>
       <div className="about-content">
-        <img className="about-pic"></img>
+        <img
+          className="about-pic"
+          src="https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_280/v1486959067/sonik_xtcmh1.png"></img>
         <span className="blurb">
+          <h2 className="sonik">Sonik Jhang</h2>
           <p>
             I am a full stack web developer. Passionate about building beautiful and efficient websites.
           </p>

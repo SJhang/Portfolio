@@ -1,25 +1,29 @@
 .assets {
-  padding: 30px 0;
   width: 100%;
   margin: 0 auto;
   height: 700px;
   box-sizing: border-box;
-}
-
-.title {
-  text-align: center;
-  font-size: 25px;
-  line-height: 100px;
-  font-weight: 400;
   display: flex;
-  width: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.assets-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  width: 200px;
   margin: 0 auto;
+  line-height: 120px;
+  border-bottom: 5px solid black;
 }
 
-.title h4 {
-  color: #ac1401;
+.all-assets {
+  display: flex;
+  flex-direction: column;
+  height: 480px;
 }
-
 .top .follower {
   display: none;
   position: relative;
@@ -62,7 +66,7 @@
   cursor: context-menu;
 }
 
-.assets > .top {
+.all-assets > .top {
   width: 70%;
   height: 160px;
   display: flex;
@@ -113,7 +117,7 @@
   width: 215px;
 }
 
-.assets > .mid {
+.all-assets > .mid {
   width: 70%;
   height: 160px;
   display: flex;
@@ -172,7 +176,7 @@
 }
 
 
-.assets > .bot {
+.all-assets > .bot {
   width: 70%;
   height: 160px;
   display: flex;

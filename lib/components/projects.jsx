@@ -38,7 +38,7 @@ const Projects = ({scrollTo}) => {
           <div className="description">
             <div className="project-name">
               <h1>MeetUps</h1>
-              <div className="project-links">
+              <div className="projects-links">
                 <i
                   className="fa fa-github fa-1x"
                   aria-hidden="true"
@@ -73,7 +73,7 @@ const Projects = ({scrollTo}) => {
           <div className="description">
             <div className="project-name">
               <h1>Frozen Milk</h1>
-              <div className="project-links">
+              <div className="projects-links">
                 <i
                   className="fa fa-github fa-1x"
                   aria-hidden="true"
@@ -103,7 +103,7 @@ const Projects = ({scrollTo}) => {
           <div className="description">
             <div className="project-name">
               <h1>Overtrack</h1>
-              <div className="project-links">
+              <div className="projects-links">
                 <i
                   className="fa fa-github fa-1x"
                   aria-hidden="true"

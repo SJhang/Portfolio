@@ -40,7 +40,10 @@ const Resume = (props) => {
       <div className="resume-content">
         <div className="left-content">
           <div className="resume-projects">
-            <h2>PROJECTS</h2>
+            <h2>
+              <i className="fa fa-pencil" aria-hidden="true"/>
+              &nbsp;&nbsp;&nbsp;PROJECTS
+            </h2>
             <div className="projects-detail">
               <div className="resume-meetups">
                 <div className="lines">
@@ -162,7 +165,10 @@ const Resume = (props) => {
             </div>
           </div>
           <div className="resume-experience">
-            <h2>EXPERIENCE</h2>
+            <h2>
+              <i className="fa fa-briefcase" aria-hidden="true"></i>
+              &nbsp;&nbsp;&nbsp;EXPERIENCE
+            </h2>
             <div className="experience-detail">
               <div className="china-pacific">
                 <div className="lines-four">
@@ -175,7 +181,12 @@ const Resume = (props) => {
                   <div className="name">China Pacific</div>
                   <div className="exp-length">Sept 2014 - May 2016</div>
                 </div>
-                <div className="exp-details"></div>
+                <div className="exp-details">
+                  <div className="position">Waiter</div>
+                  <div className="position-desc">
+                    <span>Served 60 or more clients each shift working 20 hours per week while maintaining full-­‐time student status</span>
+                  </div>
+                </div>
               </div>
               <div className="LLC">
                 <div className="lines-five">
@@ -188,14 +199,23 @@ const Resume = (props) => {
                   <div className="name">Wecon LLC</div>
                   <div className="exp-length">Mar 2009 - May 2011</div>
                 </div>
-                <div className="exp-details"></div>
+                <div className="exp-details">
+                  <div className="position">Document translator</div>
+                  <div className="position-desc">
+                    <span>Translated semiconductor circuit networks related documentations both from Korean to English and English to Korean</span>
+                    <span></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="right-content">
           <div className="skills">
-            <h2>MY SKILLS</h2>
+            <h2>
+              <i className="fa fa-code" aria-hidden="true"></i>
+              &nbsp;MY SKILLS
+            </h2>
             <div className="skills-detail">
               <ul>
                 <li>RUBY</li>
@@ -227,7 +247,10 @@ const Resume = (props) => {
             </div>
           </div>
           <div className="education">
-            <h2>EDUCATION</h2>
+            <h2>
+              <i className="fa fa-graduation-cap" aria-hidden="true"></i>
+              &nbsp;EDUCATION
+            </h2>
             <div className="education-divs">
               <div className="appAcademy">
                 <h3>APP ACADEMY</h3>
@@ -241,14 +264,38 @@ const Resume = (props) => {
             </div>
           </div>
           <div className="resume-contact">
-            <h2>CONTACT ME</h2>
-            <span>744 Overture Ct. San Jose, CA 95134</span>
-            <span>806 w 24th St. Austin, TX 78705</span>
-            <span>512 850 - 2709</span>
-            <span>sonik.jhang@utexas.edu</span>
-            <span>www.sonikjhang.com</span>
-            <span>www.linkedin.com/in/sonikjhang</span>
-            <span>www.github.com/SJhang</span>
+            <h2>
+              <i className="fa fa-id-card-o" aria-hidden="true"></i>
+              &nbsp;CONTACT ME
+            </h2>
+            <span>
+              <i className="fa fa-location-arrow" aria-hidden="true"/>
+              <p>744 Overture Ct. San Jose, CA 95134</p>
+            </span>
+            <span>
+              <i className="fa fa-location-arrow" aria-hidden="true"/>
+              <p>806 w 24th St. Austin, TX 78705</p>
+            </span>
+            <span>
+              <i className="fa fa-phone" aria-hidden="true"></i>
+              <p>512 850 - 2709</p>
+            </span>
+            <span>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+              <p>sonik.jhang@utexas.edu</p>
+            </span>
+            <span>
+              <i className="fa fa-globe" aria-hidden="true"></i>
+              <p>www.sonikjhang.com</p>
+            </span>
+            <span>
+              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+              <p>www.linkedin.com/in/sonikjhang</p>
+            </span>
+            <span>
+              <i className="fa fa-github" aria-hidden="true"></i>
+              <p>www.github.com/SJhang</p>
+            </span>
           </div>
         </div>
       </div>

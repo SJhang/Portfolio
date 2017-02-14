@@ -28731,7 +28731,7 @@
 	
 	  var _scrollTo = function _scrollTo(div) {
 	    var divOffset = (0, _jquery2.default)('.' + div).offset();
-	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top - 10 }, 'slow');
+	    return (0, _jquery2.default)('html, body').animate({ scrollTop: divOffset.top - 60 }, 'slow');
 	  };
 	
 	  return _react2.default.createElement(
@@ -28780,7 +28780,7 @@
 	      { className: 'footer-content' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'top' },
+	        { className: 'footer-top' },
 	        _react2.default.createElement(_links2.default, null),
 	        _react2.default.createElement(
 	          'div',
@@ -40283,7 +40283,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'project-links' },
+	              { className: 'projects-links' },
 	              _react2.default.createElement('i', {
 	                className: 'fa fa-github fa-1x',
 	                'aria-hidden': 'true',
@@ -40386,7 +40386,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'project-links' },
+	              { className: 'projects-links' },
 	              _react2.default.createElement('i', {
 	                className: 'fa fa-github fa-1x',
 	                'aria-hidden': 'true',
@@ -40464,7 +40464,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'project-links' },
+	              { className: 'projects-links' },
 	              _react2.default.createElement('i', {
 	                className: 'fa fa-github fa-1x',
 	                'aria-hidden': 'true',
@@ -40623,183 +40623,170 @@
 	    { className: 'assets' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'title' },
-	      '<',
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'assets'
-	      ),
-	      '>'
+	      { className: 'assets-title' },
+	      'ASSETS'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'top' },
+	      { className: 'all-assets' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'ruby', onMouseOver: function onMouseOver() {
-	            return showName("ruby");
-	          } },
+	        { className: 'top' },
 	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Ruby'
+	          'div',
+	          { className: 'ruby', onMouseOver: function onMouseOver() {
+	              return showName("ruby");
+	            } },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Ruby'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'rails' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Ruby on Rails'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'rspec' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Rspec'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'python' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Python'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'github' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'GitHub'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'git' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Git'
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'rails' },
+	        { className: 'mid' },
 	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Ruby on Rails'
+	          'div',
+	          { className: 'react' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'React'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'js' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'JavaScript'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'css' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'CSS'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'html' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'HTML'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'psql' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'PostgreSQL'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'mysql' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'MySQL'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'jasmine' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Jasmine'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'webpack' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Webpack'
+	          )
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'rspec' },
+	        { className: 'bot' },
 	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Rspec'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'python' },
+	          'div',
+	          { className: 'node' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'NodeJS'
+	          )
+	        ),
 	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Python'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'github' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'GitHub'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'git' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Git'
+	          'div',
+	          { className: 'heroku' },
+	          _react2.default.createElement(
+	            'h4',
+	            { className: 'follower' },
+	            'Heroku'
+	          )
 	        )
 	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'mid' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'react' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'React'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'js' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'JavaScript'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'css' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'CSS'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'html' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'HTML'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'psql' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'PostgreSQL'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'mysql' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'MySQL'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'jasmine' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Jasmine'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'webpack' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Webpack'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'bot' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'node' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'NodeJS'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'heroku' },
-	        _react2.default.createElement(
-	          'h4',
-	          { className: 'follower' },
-	          'Heroku'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'title' },
-	      '<',
-	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        'assets'
-	      ),
-	      '\u2044>'
 	    )
 	  );
 	};
@@ -40829,15 +40816,22 @@
 	    _react2.default.createElement(
 	      "div",
 	      { className: "about-title" },
-	      "Sonik Jhang"
+	      "ABOUT ME"
 	    ),
 	    _react2.default.createElement(
 	      "div",
 	      { className: "about-content" },
-	      _react2.default.createElement("img", { className: "about-pic" }),
+	      _react2.default.createElement("img", {
+	        className: "about-pic",
+	        src: "https://res.cloudinary.com/dsetpdsls/image/upload/c_fit,w_280/v1486959067/sonik_xtcmh1.png" }),
 	      _react2.default.createElement(
 	        "span",
 	        { className: "blurb" },
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "sonik" },
+	          "Sonik Jhang"
+	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
@@ -40949,7 +40943,8 @@
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "PROJECTS"
+	            _react2.default.createElement("i", { className: "fa fa-pencil", "aria-hidden": "true" }),
+	            "\xA0\xA0\xA0PROJECTS"
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -41262,7 +41257,8 @@
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "EXPERIENCE"
+	            _react2.default.createElement("i", { className: "fa fa-briefcase", "aria-hidden": "true" }),
+	            "\xA0\xA0\xA0EXPERIENCE"
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -41292,7 +41288,24 @@
 	                  "Sept 2014 - May 2016"
 	                )
 	              ),
-	              _react2.default.createElement("div", { className: "exp-details" })
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position" },
+	                  "Waiter"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position-desc" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Served 60 or more clients each shift working 20 hours per week while maintaining full-\xAD\u2010time student status"
+	                  )
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "div",
@@ -41319,7 +41332,25 @@
 	                  "Mar 2009 - May 2011"
 	                )
 	              ),
-	              _react2.default.createElement("div", { className: "exp-details" })
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position" },
+	                  "Document translator"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position-desc" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Translated semiconductor circuit networks related documentations both from Korean to English and English to Korean"
+	                  ),
+	                  _react2.default.createElement("span", null)
+	                )
+	              )
 	            )
 	          )
 	        )
@@ -41333,7 +41364,8 @@
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "MY SKILLS"
+	            _react2.default.createElement("i", { className: "fa fa-code", "aria-hidden": "true" }),
+	            "\xA0MY SKILLS"
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -41469,7 +41501,8 @@
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "EDUCATION"
+	            _react2.default.createElement("i", { className: "fa fa-graduation-cap", "aria-hidden": "true" }),
+	            "\xA0EDUCATION"
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -41515,42 +41548,78 @@
 	          _react2.default.createElement(
 	            "h2",
 	            null,
-	            "CONTACT ME"
+	            _react2.default.createElement("i", { className: "fa fa-id-card-o", "aria-hidden": "true" }),
+	            "\xA0CONTACT ME"
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "744 Overture Ct. San Jose, CA 95134"
+	            _react2.default.createElement("i", { className: "fa fa-location-arrow", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "744 Overture Ct. San Jose, CA 95134"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "806 w 24th St. Austin, TX 78705"
+	            _react2.default.createElement("i", { className: "fa fa-location-arrow", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "806 w 24th St. Austin, TX 78705"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "512 850 - 2709"
+	            _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "512 850 - 2709"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "sonik.jhang@utexas.edu"
+	            _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "sonik.jhang@utexas.edu"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "www.sonikjhang.com"
+	            _react2.default.createElement("i", { className: "fa fa-globe", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "www.sonikjhang.com"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "www.linkedin.com/in/sonikjhang"
+	            _react2.default.createElement("i", { className: "fa fa-linkedin-square", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "www.linkedin.com/in/sonikjhang"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "span",
 	            null,
-	            "www.github.com/SJhang"
+	            _react2.default.createElement("i", { className: "fa fa-github", "aria-hidden": "true" }),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "www.github.com/SJhang"
+	            )
 	          )
 	        )
 	      )

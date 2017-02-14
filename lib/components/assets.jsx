@@ -34,63 +34,64 @@ const Assets = ({scrollTo}) => {
 
   return (
     <div className="assets">
-      <div className="title">&lt;<h4>assets</h4>&gt;</div>
-      <div className="top">
-        <div className="ruby" onMouseOver={() => showName("ruby")}>
-          <h4 className="follower">Ruby</h4>
-        </div>
-        <div className="rails">
-          <h4 className="follower">Ruby on Rails</h4>
-        </div>
-        <div className="rspec">
-          <h4 className="follower">Rspec</h4>
-        </div>
-        <div className="python">
-          <h4 className="follower">Python</h4>
-        </div>
-        <div className="github">
-          <h4 className="follower">GitHub</h4>
-        </div>
-        <div className="git">
-          <h4 className="follower">Git</h4>
-        </div>
+      <div className="assets-title">
+        ASSETS
       </div>
-      <div className="mid">
-        <div className="react">
-          <h4 className="follower">React</h4>
+      <div className="all-assets">
+        <div className="top">
+          <div className="ruby" onMouseOver={() => showName("ruby")}>
+            <h4 className="follower">Ruby</h4>
+          </div>
+          <div className="rails">
+            <h4 className="follower">Ruby on Rails</h4>
+          </div>
+          <div className="rspec">
+            <h4 className="follower">Rspec</h4>
+          </div>
+          <div className="python">
+            <h4 className="follower">Python</h4>
+          </div>
+          <div className="github">
+            <h4 className="follower">GitHub</h4>
+          </div>
+          <div className="git">
+            <h4 className="follower">Git</h4>
+          </div>
         </div>
-        <div className="js">
-          <h4 className="follower">JavaScript</h4>
+        <div className="mid">
+          <div className="react">
+            <h4 className="follower">React</h4>
+          </div>
+          <div className="js">
+            <h4 className="follower">JavaScript</h4>
+          </div>
+          <div className="css">
+            <h4 className="follower">CSS</h4>
+          </div>
+          <div className="html">
+            <h4 className="follower">HTML</h4>
+          </div>
+          <div className="psql">
+            <h4 className="follower">PostgreSQL</h4>
+          </div>
+          <div className="mysql">
+            <h4 className="follower">MySQL</h4>
+          </div>
+          <div className="jasmine">
+            <h4 className="follower">Jasmine</h4>
+          </div>
+          <div className="webpack">
+            <h4 className="follower">Webpack</h4>
+          </div>
         </div>
-        <div className="css">
-          <h4 className="follower">CSS</h4>
+        <div className="bot">
+          <div className="node">
+            <h4 className="follower">NodeJS</h4>
+          </div>
+          <div className="heroku">
+            <h4 className="follower">Heroku</h4>
+          </div>
         </div>
-        <div className="html">
-          <h4 className="follower">HTML</h4>
-        </div>
-        <div className="psql">
-          <h4 className="follower">PostgreSQL</h4>
-        </div>
-        <div className="mysql">
-          <h4 className="follower">MySQL</h4>
-        </div>
-        <div className="jasmine">
-          <h4 className="follower">Jasmine</h4>
-        </div>
-        <div className="webpack">
-          <h4 className="follower">Webpack</h4>
-        </div>
-      </div>
-      <div className="bot">
-        <div className="node">
-          <h4 className="follower">NodeJS</h4>
-        </div>
-        <div className="heroku">
-          <h4 className="follower">Heroku</h4>
-        </div>
-      </div>
-      <div className="title">
-        &lt;<h4>assets</h4>&#8260;&gt;
       </div>
     </div>
   );

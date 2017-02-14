@@ -8,7 +8,7 @@ const Footer = (props) => {
   return (
     <div className="global-footer">
       <div className="footer-content">
-        <div className="top">
+        <div className="footer-top">
           <Links />
           <div className="clipboard-email">
             <input

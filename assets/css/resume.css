@@ -171,8 +171,23 @@
   font-size: 15px;
   font-weight: 100;
   line-height: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
+  display: flex;
 }
+
+.resume-contact > span > i {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.resume-contact > span > p {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
 
 .resume-projects {
   display: flex;
@@ -323,9 +338,36 @@
   border-radius: 10px;
   height: 100%;
   width: 10%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
 }
 
 .lines-four div:last-child {
+  width: 45%;
+}
+
+.lines-five {
+  width: 10%;
+  display: flex;
+  height: 100%;
+}
+
+.lines-five div:first-child {
+  width: 45%;
+}
+
+.lines-five div:nth-child(2) {
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  height: 100%;
+  width: 10%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+
+.lines-five div:last-child {
   width: 45%;
 }
 
@@ -370,6 +412,17 @@
   position: absolute;
   left: 48px;
   top: 1304px;
+  box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.56);
+}
+
+.line-circle-five {
+  background: #3ea7d4;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 48px;
+  top: 1391px;
   box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.56);
 }
 
@@ -441,10 +494,22 @@ i > h4 {
 }
 
 .experience-detail {
-  height: 155px;
+  height: 175px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.china-pacific {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.LLC {
+  width: 100%;
+  height: 50%;
+  display: flex;
 }
 
 .exp-title {
@@ -455,6 +520,7 @@ i > h4 {
 .exp-details {
   width: 65%;
   padding: 20px;
+
 }
 
 .exp-title > .name {
@@ -462,4 +528,16 @@ i > h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   padding-bottom: 10px;
+}
+
+.position {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.position-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 20px;
+  padding-top: 5px;
 }
