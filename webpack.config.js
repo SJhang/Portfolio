@@ -24,7 +24,7 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: ["", ".js", ".jsx" ],
-    alias: { clipboard: 'clipboard/dist/clipboard' }
+    alias: { clipboard: 'clipboard/lib/clipboard' }
   },
   devServer: { inline: true }
 };

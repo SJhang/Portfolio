@@ -1,5 +1,6 @@
 import React from 'react';
 import Links from './links';
+let Clipboard = require('clipboard');
 
 const Footer = (props) => {
   const email = new Clipboard('.email');

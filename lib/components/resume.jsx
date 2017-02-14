@@ -185,8 +185,8 @@ const Resume = (props) => {
                   <div></div>
                 </div>
                 <div className="exp-title">
-                  <div className="name">LLC</div>
-                  <div className="exp-length">June 2009 - Mar 2011</div>
+                  <div className="name">Wecon LLC</div>
+                  <div className="exp-length">Mar 2009 - May 2011</div>
                 </div>
                 <div className="exp-details"></div>
               </div>
