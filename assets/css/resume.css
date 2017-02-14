@@ -463,12 +463,17 @@
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+  cursor: pointer;
 }
 
 .project-links i {
   padding: 5px;
   display: flex;
   width: 100%;
+}
+
+.project-links i:hover {
+  transform: scale(1.03);
 }
 
 .resume-blurb {
@@ -540,4 +545,8 @@ i > h4 {
   font-weight: 200;
   line-height: 20px;
   padding-top: 5px;
+}
+
+.change-cursor:hover {
+  cursor: pointer;
 }

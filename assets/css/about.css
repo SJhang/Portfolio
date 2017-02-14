@@ -3,17 +3,18 @@
   flex-direction: column;
   height: 760px;
   margin: 0 auto;
+  background: #303030;
 }
 
 .about-title {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
-  color: black;
+  color: white;
   width: 200px;
   margin: 0 auto;
   line-height: 120px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid white;
 }
 
 .about-content {
@@ -42,6 +43,7 @@
   font-weight: 200;
   font-size: 15px;
   line-height: 30px;
+  color: white;
 }
 
 .blurb h2 {
@@ -50,4 +52,5 @@
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 30px;
+  color: white;
 }

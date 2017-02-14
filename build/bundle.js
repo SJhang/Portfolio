@@ -29750,6 +29750,10 @@
 	    return router.push('/resume');
 	  };
 	
+	  var directToContact = function directToContact() {
+	    scrollTo('contact');
+	  };
+	
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'global-header' },
@@ -29827,6 +29831,23 @@
 	              'h4',
 	              null,
 	              'About'
+	            ),
+	            '\u2044>'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { onClick: function onClick() {
+	                return directToContact();
+	              } },
+	            '<',
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Contact'
 	            ),
 	            '\u2044>'
 	          )
@@ -40099,6 +40120,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _jquery = __webpack_require__(282);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
 	var _intro = __webpack_require__(284);
 	
 	var _intro2 = _interopRequireDefault(_intro);
@@ -40115,9 +40140,9 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _jquery = __webpack_require__(282);
+	var _contact = __webpack_require__(289);
 	
-	var _jquery2 = _interopRequireDefault(_jquery);
+	var _contact2 = _interopRequireDefault(_contact);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -40150,11 +40175,15 @@
 	        } }),
 	      _react2.default.createElement(_about2.default, { scrollTo: function scrollTo(div) {
 	          return _scrollTo(div);
+	        } }),
+	      _react2.default.createElement(_contact2.default, { scrollTo: function scrollTo(div) {
+	          return _scrollTo(div);
 	        } })
 	    )
 	  );
 	};
 	
+	//components
 	exports.default = Content;
 
 /***/ },
@@ -40900,6 +40929,22 @@
 	    return window.open("https://github.com/Sebastiansc/Overtrack");
 	  };
 	
+	  var openLinkedin = function openLinkedin() {
+	    return window.open('https://www.linkedin.com/in/sonik-jhang');
+	  };
+	
+	  var openGithub = function openGithub() {
+	    return window.open("https://github.com/SJhang");
+	  };
+	
+	  var openEmail = function openEmail() {
+	    location.href = "mailto:sonik.jhang@utexas.edu";
+	  };
+	
+	  var openPortfolio = function openPortfolio() {
+	    return window.open("http://www.sonikjhang.com/");
+	  };
+	
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "resume" },
@@ -41302,7 +41347,7 @@
 	                  _react2.default.createElement(
 	                    "span",
 	                    null,
-	                    "Served 60 or more clients each shift working 20 hours per week while maintaining full-\xAD\u2010time student status"
+	                    "Served 60 or more customers each shift working 20 hours per week while maintaining full-\xAD\u2010time student status"
 	                  )
 	                )
 	              )
@@ -41583,7 +41628,11 @@
 	          ),
 	          _react2.default.createElement(
 	            "span",
-	            null,
+	            {
+	              onClick: function onClick() {
+	                return openEmail();
+	              },
+	              className: "change-cursor" },
 	            _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
 	            _react2.default.createElement(
 	              "p",
@@ -41593,7 +41642,11 @@
 	          ),
 	          _react2.default.createElement(
 	            "span",
-	            null,
+	            {
+	              onClick: function onClick() {
+	                return openPortfolio();
+	              },
+	              className: "change-cursor" },
 	            _react2.default.createElement("i", { className: "fa fa-globe", "aria-hidden": "true" }),
 	            _react2.default.createElement(
 	              "p",
@@ -41603,7 +41656,11 @@
 	          ),
 	          _react2.default.createElement(
 	            "span",
-	            null,
+	            {
+	              onClick: function onClick() {
+	                return openLinkedin();
+	              },
+	              className: "change-cursor" },
 	            _react2.default.createElement("i", { className: "fa fa-linkedin-square", "aria-hidden": "true" }),
 	            _react2.default.createElement(
 	              "p",
@@ -41613,7 +41670,11 @@
 	          ),
 	          _react2.default.createElement(
 	            "span",
-	            null,
+	            {
+	              onClick: function onClick() {
+	                return openGithub();
+	              },
+	              className: "change-cursor" },
 	            _react2.default.createElement("i", { className: "fa fa-github", "aria-hidden": "true" }),
 	            _react2.default.createElement(
 	              "p",
@@ -41648,6 +41709,80 @@
 	//     </div>
 	//   </div>
 	// </div>
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = function Contact(_ref) {
+	  var scrollTo = _ref.scrollTo;
+	
+	  var openEmail = function openEmail() {
+	    location.href = "mailto:sonik.jhang@utexas.edu";
+	  };
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "contact" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "contact-title" },
+	      "CONTACT"
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "contact-info" },
+	      _react2.default.createElement(
+	        "div",
+	        {
+	          className: "contact-spec",
+	          onClick: function onClick() {
+	            return openEmail();
+	          } },
+	        _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "sonik.jhang@utexas.edu"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "contact-spec" },
+	        _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "San Francisco, CA"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "contact-spec" },
+	        _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "512 850-2709"
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);

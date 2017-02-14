@@ -27,6 +27,10 @@ const Header = ({scrollTo, router}) => {
     return (router.push('/resume'));
   };
 
+  const directToContact = () => {
+    scrollTo('contact');
+  };
+
   return (
     <div className="global-header">
       <div className="header-content">
@@ -51,6 +55,11 @@ const Header = ({scrollTo, router}) => {
           <li>
             <Link onClick={() => directToAbout()}>
               &lt;<h4>About</h4>&#8260;&gt;
+            </Link>
+          </li>
+          <li>
+            <Link onClick={() => directToContact()}>
+              &lt;<h4>Contact</h4>&#8260;&gt;
             </Link>
           </li>
           <li>

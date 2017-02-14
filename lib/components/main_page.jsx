@@ -1,9 +1,12 @@
 import React from 'react';
+import $ from "jquery";
+
+//components
 import Intro from './intro';
 import Projects from './projects';
 import Assets from './assets';
 import About from './about';
-import $ from "jquery";
+import Contact from './contact';
 
 const Content = (props) => {
   const componentDidMount = () => {
@@ -24,6 +27,7 @@ const Content = (props) => {
         <Projects scrollTo={div => scrollTo(div)}/>
         <Assets scrollTo={div => scrollTo(div)}/>
         <About scrollTo={div => scrollTo(div)}/>
+        <Contact scrollTo={div => scrollTo(div)}/>
       </div>
     </div>
   );

@@ -25,6 +25,22 @@ const Resume = (props) => {
     return window.open("https://github.com/Sebastiansc/Overtrack");
   };
 
+  const openLinkedin = () => {
+    return window.open('https://www.linkedin.com/in/sonik-jhang');
+  };
+
+  const openGithub = () => {
+    return window.open("https://github.com/SJhang");
+  };
+
+  const openEmail = () => {
+    location.href = "mailto:sonik.jhang@utexas.edu";
+  };
+
+  const openPortfolio = () => {
+    return window.open("http://www.sonikjhang.com/");
+  };
+
   return (
     <div className="resume">
       <header className="resume-header">
@@ -184,7 +200,7 @@ const Resume = (props) => {
                 <div className="exp-details">
                   <div className="position">Waiter</div>
                   <div className="position-desc">
-                    <span>Served 60 or more clients each shift working 20 hours per week while maintaining full-­‐time student status</span>
+                    <span>Served 60 or more customers each shift working 20 hours per week while maintaining full-­‐time student status</span>
                   </div>
                 </div>
               </div>
@@ -280,19 +296,27 @@ const Resume = (props) => {
               <i className="fa fa-phone" aria-hidden="true"></i>
               <p>512 850 - 2709</p>
             </span>
-            <span>
+            <span
+              onClick={() => openEmail()}
+              className="change-cursor">
               <i className="fa fa-envelope" aria-hidden="true"></i>
               <p>sonik.jhang@utexas.edu</p>
             </span>
-            <span>
+            <span
+              onClick={() => openPortfolio()}
+              className="change-cursor">
               <i className="fa fa-globe" aria-hidden="true"></i>
               <p>www.sonikjhang.com</p>
             </span>
-            <span>
+            <span
+              onClick={() => openLinkedin()}
+              className="change-cursor">
               <i className="fa fa-linkedin-square" aria-hidden="true"></i>
               <p>www.linkedin.com/in/sonikjhang</p>
             </span>
-            <span>
+            <span
+              onClick={() => openGithub()}
+              className="change-cursor">
               <i className="fa fa-github" aria-hidden="true"></i>
               <p>www.github.com/SJhang</p>
             </span>
