@@ -15,9 +15,13 @@
   border-bottom: 1px solid white;
   padding-top: 80px;
   height: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .frozen-milk {
+  display: flex;
+  justify-content: space-between;
   padding: 0 100px;
   padding-top: 100px;
   height: 400px;
@@ -29,6 +33,8 @@
   padding-top: 100px;
   height: 400px;
   padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title-project {
@@ -76,6 +82,15 @@
 
 .overview {
   width: 65%;
+}
+
+.overview > img {
+  width: 600px;
+  height: 350px;
+}
+
+.overview > img:hover {
+  transform: scale(1.08);
 }
 
 .project-blurb {

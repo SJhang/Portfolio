@@ -68,7 +68,7 @@ const Projects = ({scrollTo}) => {
             </ul>
           </div>
           <div className="overview">
-            <img src=""></img>
+            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096033/meetups_kkubiw.png"></img>
           </div>
         </div>
         <div className="frozen-milk">
@@ -100,7 +100,7 @@ const Projects = ({scrollTo}) => {
             </ul>
           </div>
           <div className="overview">
-            <img src=""></img>
+            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096032/frozen-milk_v5e3te.png"></img>
           </div>
         </div>
         <div className="overtrack">
@@ -138,7 +138,7 @@ const Projects = ({scrollTo}) => {
             </ul>
           </div>
           <div className="overview">
-            <img src=""></img>
+            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096031/overtrack_d1z0fb.png"></img>
           </div>
         </div>
       </div>

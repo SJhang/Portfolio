@@ -40400,7 +40400,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'overview' },
-	          _react2.default.createElement('img', { src: '' })
+	          _react2.default.createElement('img', { src: 'https://res.cloudinary.com/dsetpdsls/image/upload/v1487096033/meetups_kkubiw.png' })
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -40482,7 +40482,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'overview' },
-	          _react2.default.createElement('img', { src: '' })
+	          _react2.default.createElement('img', { src: 'https://res.cloudinary.com/dsetpdsls/image/upload/v1487096032/frozen-milk_v5e3te.png' })
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -40594,7 +40594,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'overview' },
-	          _react2.default.createElement('img', { src: '' })
+	          _react2.default.createElement('img', { src: 'https://res.cloudinary.com/dsetpdsls/image/upload/v1487096031/overtrack_d1z0fb.png' })
 	        )
 	      )
 	    )
@@ -41230,6 +41230,11 @@
 	                    "span",
 	                    null,
 	                    "Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Leveraged CreateJS for interactive and responsive game"
 	                  )
 	                )
 	              )
@@ -41431,7 +41436,7 @@
 	                  _react2.default.createElement(
 	                    "span",
 	                    null,
-	                    "Translated semiconductor circuit networks related documentations both from Korean to English and English to Korean"
+	                    "Translated semiconductor circuit networks related documents Korean to English and English to Korean"
 	                  ),
 	                  _react2.default.createElement("span", null)
 	                )

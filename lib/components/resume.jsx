@@ -136,6 +136,9 @@ const Resume = (props) => {
                       Rendered animations reliably with a combination of Spritesheet on an HTML5 Canvas</span>
                     <span>
                       Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score</span>
+                    <span>
+                      Leveraged CreateJS for interactive and responsive game
+                    </span>
                   </div>
                 </div>
               </div>
@@ -218,7 +221,7 @@ const Resume = (props) => {
                 <div className="exp-details">
                   <div className="position">Document translator</div>
                   <div className="position-desc">
-                    <span>Translated semiconductor circuit networks related documentations both from Korean to English and English to Korean</span>
+                    <span>Translated semiconductor circuit networks related documents Korean to English and English to Korean</span>
                     <span></span>
                   </div>
                 </div>
