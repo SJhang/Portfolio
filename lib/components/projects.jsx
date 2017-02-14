@@ -67,7 +67,9 @@ const Projects = ({scrollTo}) => {
               <li>Heroku</li>
             </ul>
           </div>
-          <div className="overview"></div>
+          <div className="overview">
+            <img src=""></img>
+          </div>
         </div>
         <div className="frozen-milk">
           <div className="description">
@@ -97,7 +99,9 @@ const Projects = ({scrollTo}) => {
               <li>Webpack</li>
             </ul>
           </div>
-          <div className="overview"></div>
+          <div className="overview">
+            <img src=""></img>
+          </div>
         </div>
         <div className="overtrack">
           <div className="description">
@@ -133,7 +137,9 @@ const Projects = ({scrollTo}) => {
               <li>Heroku</li>
             </ul>
           </div>
-          <div className="overview"></div>
+          <div className="overview">
+            <img src=""></img>
+          </div>
         </div>
       </div>
     </div>

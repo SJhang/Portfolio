@@ -24,7 +24,7 @@
   flex-direction: column;
   height: 480px;
 }
-.top .follower {
+/*.top .follower {
   display: none;
   position: relative;
 }
@@ -37,8 +37,8 @@
 .bot .follower {
   display: none;
   position: relative;
-}
-
+}*/
+/*
 .top:hover .follower {
   display: block;
 }
@@ -49,6 +49,12 @@
 
 .bot:hover .follower {
   display: block;
+}*/
+
+.follower {
+  color: black;
+  font-size: 10px;
+  display: none;
 }
 
 .top div:hover {
@@ -82,7 +88,6 @@
   background-size: cover;
   width: 90px;
   height: 90px;
-
 }
 
 .top > .rails {

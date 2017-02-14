@@ -40397,7 +40397,11 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'overview' })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'overview' },
+	          _react2.default.createElement('img', { src: '' })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -40475,7 +40479,11 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'overview' })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'overview' },
+	          _react2.default.createElement('img', { src: '' })
+	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -40583,7 +40591,11 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'overview' })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'overview' },
+	          _react2.default.createElement('img', { src: '' })
+	        )
 	      )
 	    )
 	  );
@@ -40614,37 +40626,65 @@
 	var Assets = function Assets(_ref) {
 	  var scrollTo = _ref.scrollTo;
 	
-	  var showName = function showName(name) {
+	  // const showName = (name) => {
+	  //   let mouseX = 0, mouseY = 0, limitX = 15, limitY = 15;
+	  //
+	  //   //cache the selector
+	  //   let follower = null;
+	  //   let xp = 0, yp = 0;
+	  //
+	  //   $(window).mousemove(e => {
+	  //     let $elem = $(document.elementFromPoint(e.pageX, e.pageY));
+	  //
+	  //     if ($elem.attr("class") === `${name}`) {st
+	  //       let offset = $elem.offset();
+	  //
+	  //       mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
+	  //       mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
+	  //
+	  //       if (mouseX < 0) mouseX = 0;
+	  //       if (mouseY < 0) mouseY = 0;
+	  //
+	  //       xp += (mouseX - xp) / 12;
+	  //       yp += (mouseY - yp) / 12;
+	  //
+	  //       let loop = setInterval(() => {
+	  //         $elem.find('.follower').css({left: xp, top: yp});
+	  //       }, 30);
+	  //     }
+	  //   });
+	  //
+	  // };
+	  var showName = function showName(e, div) {
 	    var mouseX = 0,
-	        mouseY = 0,
-	        limitX = 15,
+	        mouseY = 0;
+	    var limitX = 15,
 	        limitY = 15;
+	    var target = e.currentTarget;
 	
 	    //cache the selector
-	    var follower = null;
-	    var xp = 0,
+	    var follower = void 0,
+	        xp = 0,
 	        yp = 0;
+	    if (target.className === div) {
+	      debugger;
+	      mouseX = Math.min(e.pageX - target.offsetLeft, target.offsetWidth - limitX);
+	      mouseY = Math.min(e.pageY - target.offsetTop, target.offsetHeight - limitY);
 	
-	    (0, _jquery2.default)(window).mousemove(function (e) {
-	      var $elem = (0, _jquery2.default)(document.elementFromPoint(e.pageX, e.pageY));
+	      if (mouseX < 0) mouseX = 0;
+	      if (mouseY < 0) mouseY = 0;
 	
-	      if ($elem.attr("class") === '' + name) {
-	        var offset = $elem.offset();
+	      xp += (mouseX - xp) / 12;
+	      yp += (mouseY - yp) / 12;
 	
-	        mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
-	        mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
-	
-	        if (mouseX < 0) mouseX = 0;
-	        if (mouseY < 0) mouseY = 0;
-	
-	        xp += (mouseX - xp) / 12;
-	        yp += (mouseY - yp) / 12;
-	
-	        var loop = setInterval(function () {
-	          $elem.find('.follower').css({ left: xp, top: yp });
-	        }, 30);
-	      }
-	    });
+	      setInterval(function () {
+	        // target.children[0].style.display = "block";
+	        target.children[0].style.left = xp;
+	        target.children[0].style.top = yp;
+	      }, 30);
+	    } else {
+	      // target.children[0].style.display = "none";
+	    }
 	  };
 	
 	  return _react2.default.createElement(
@@ -40663,8 +40703,8 @@
 	        { className: 'top' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'ruby', onMouseOver: function onMouseOver() {
-	              return showName("ruby");
+	          { className: 'ruby', onMouseOver: function onMouseOver(e) {
+	              return showName(e, "ruby");
 	            } },
 	          _react2.default.createElement(
 	            'h4',
