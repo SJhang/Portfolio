@@ -41467,13 +41467,33 @@
 	              null,
 	              _react2.default.createElement(
 	                "li",
-	                null,
-	                "RUBY"
+	                { className: "highlight" },
+	                "RUBY  \u2605"
 	              ),
 	              _react2.default.createElement(
 	                "li",
-	                null,
-	                "RAILS"
+	                { className: "highlight" },
+	                "RAILS  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "GIT  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "HTML 5  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "WEBPACK  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "JQUERY  \u2605"
 	              ),
 	              _react2.default.createElement(
 	                "li",
@@ -41503,32 +41523,12 @@
 	              _react2.default.createElement(
 	                "li",
 	                null,
-	                "GIT"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
 	                "GITHUB"
 	              ),
 	              _react2.default.createElement(
 	                "li",
 	                null,
-	                "HTML 5"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
 	                "PROCESSING 3"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "WEBPACK"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "JQUERY"
 	              ),
 	              _react2.default.createElement(
 	                "li",
@@ -41541,8 +41541,23 @@
 	              null,
 	              _react2.default.createElement(
 	                "li",
-	                null,
-	                "JAVASCRIPT"
+	                { className: "highlight" },
+	                "JAVASCRIPT  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "POSTGRESQL  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "REACT/REDUX  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "CSS 3  \u2605"
 	              ),
 	              _react2.default.createElement(
 	                "li",
@@ -41552,17 +41567,7 @@
 	              _react2.default.createElement(
 	                "li",
 	                null,
-	                "REACT/REDUX"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
 	                "PYTHON"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "CSS 3"
 	              ),
 	              _react2.default.createElement(
 	                "li",
@@ -41583,6 +41588,31 @@
 	                "li",
 	                null,
 	                "CREATE.JS"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "\xA0"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "\xA0"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "\xA0"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
+	                "\u2605\xA0",
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "no-style" },
+	                  "stronger skills"
+	                )
 	              )
 	            )
 	          )

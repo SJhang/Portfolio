@@ -104,6 +104,17 @@
 
 .skills-detail li {
   line-height: 30px;
+  display: flex;
+}
+
+.highlight {
+  text-decoration: underline;
+  color: #ffd7ae;
+}
+
+.no-style {
+  text-decoration: none;
+  color: white;
 }
 
 .right-content .education {

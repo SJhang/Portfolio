@@ -237,31 +237,38 @@ const Resume = (props) => {
             </h2>
             <div className="skills-detail">
               <ul>
-                <li>RUBY</li>
-                <li>RAILS</li>
+                <li className="highlight">RUBY  &#x2605;</li>
+                <li className="highlight">RAILS  &#x2605;</li>
+                <li className="highlight">GIT  &#x2605;</li>
+                <li className="highlight">HTML 5  &#x2605;</li>
+                <li className="highlight">WEBPACK  &#x2605;</li>
+                <li className="highlight">JQUERY  &#x2605;</li>
                 <li>RSPEC</li>
                 <li>CAPYBARA</li>
                 <li>SQL</li>
                 <li>REDIS</li>
                 <li>HEROKU</li>
-                <li>GIT</li>
                 <li>GITHUB</li>
-                <li>HTML 5</li>
                 <li>PROCESSING 3</li>
-                <li>WEBPACK</li>
-                <li>JQUERY</li>
                 <li>SASS</li>
               </ul>
               <ul>
-                <li>JAVASCRIPT</li>
+                <li className="highlight">JAVASCRIPT  &#x2605;</li>
+                <li className="highlight">POSTGRESQL  &#x2605;</li>
+                <li className="highlight">REACT/REDUX  &#x2605;</li>
+                <li className="highlight">CSS 3  &#x2605;</li>
                 <li>NODE.JS</li>
-                <li>REACT/REDUX</li>
                 <li>PYTHON</li>
-                <li>CSS 3</li>
                 <li>D3.JS</li>
                 <li>MYSQL</li>
                 <li>JASMINE</li>
                 <li>CREATE.JS</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li className="highlight">&#x2605;&nbsp;
+                  <div className="no-style">stronger skills</div>
+                </li>
               </ul>
             </div>
           </div>
