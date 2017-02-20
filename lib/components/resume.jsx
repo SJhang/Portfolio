@@ -201,7 +201,7 @@ const Resume = (props) => {
                   <div className="exp-length">Sept 2014 - May 2016</div>
                 </div>
                 <div className="exp-details">
-                  <div className="position">Waiter</div>
+                  <div className="position">Web Developer / Waiter</div>
                   <div className="position-desc">
                     <span>Served 60 or more customers each shift working 20 hours per week while maintaining full-­‐time student status</span>
                   </div>

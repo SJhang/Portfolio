@@ -21529,7 +21529,7 @@
 	
 	var _main_page2 = _interopRequireDefault(_main_page);
 	
-	var _resume = __webpack_require__(288);
+	var _resume = __webpack_require__(289);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
@@ -40142,7 +40142,7 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(289);
+	var _contact = __webpack_require__(288);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
@@ -40946,6 +40946,80 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var Contact = function Contact(_ref) {
+	  var scrollTo = _ref.scrollTo;
+	
+	  var openEmail = function openEmail() {
+	    location.href = "mailto:sonik.jhang@utexas.edu";
+	  };
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "contact" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "contact-title" },
+	      "CONTACT"
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "contact-info" },
+	      _react2.default.createElement(
+	        "div",
+	        {
+	          className: "contact-spec",
+	          onClick: function onClick() {
+	            return openEmail();
+	          } },
+	        _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "sonik.jhang@utexas.edu"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "contact-spec" },
+	        _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "San Francisco, CA"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "contact-spec" },
+	        _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "512 850-2709"
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Contact;
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	var Resume = function Resume(props) {
 	  var directToMeetup = function directToMeetup() {
 	    return window.open("https://meet-ups.herokuapp.com/#/");
@@ -41386,7 +41460,7 @@
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "position" },
-	                  "Waiter"
+	                  "Web Developer / Waiter"
 	                ),
 	                _react2.default.createElement(
 	                  "div",
@@ -41786,80 +41860,6 @@
 	//     </div>
 	//   </div>
 	// </div>
-
-/***/ },
-/* 289 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Contact = function Contact(_ref) {
-	  var scrollTo = _ref.scrollTo;
-	
-	  var openEmail = function openEmail() {
-	    location.href = "mailto:sonik.jhang@utexas.edu";
-	  };
-	
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "contact" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "contact-title" },
-	      "CONTACT"
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "contact-info" },
-	      _react2.default.createElement(
-	        "div",
-	        {
-	          className: "contact-spec",
-	          onClick: function onClick() {
-	            return openEmail();
-	          } },
-	        _react2.default.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }),
-	        _react2.default.createElement(
-	          "h2",
-	          null,
-	          "sonik.jhang@utexas.edu"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "contact-spec" },
-	        _react2.default.createElement("i", { className: "fa fa-map-marker", "aria-hidden": "true" }),
-	        _react2.default.createElement(
-	          "h2",
-	          null,
-	          "San Francisco, CA"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "contact-spec" },
-	        _react2.default.createElement("i", { className: "fa fa-phone", "aria-hidden": "true" }),
-	        _react2.default.createElement(
-	          "h2",
-	          null,
-	          "512 850-2709"
-	        )
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Contact;
 
 /***/ }
 /******/ ]);
