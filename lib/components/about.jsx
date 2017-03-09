@@ -13,16 +13,16 @@ const About = (props) => {
         <span className="blurb">
           <h2 className="sonik">Sonik Jhang</h2>
           <p>
-            I am a full stack web developer. Passionate about building beautiful and efficient websites.
+            I am a full stack web developer who is passionate about building beautiful and efficient websites.
           </p>
           <p>
-            After graduating from UT Austin, I have studied my own and attended full time courses to pursue my desire for learning programming languages and new technologies.
+            After graduating from UT Austin, I studied on my own and attended full time courses to pursue my desire for learning programming languages and new technologies.
           </p>
           <p>
-            I am currently looking for a Software Developer position where I can apply my programming skills to solve any challenges that can be thrown at me.
+            I am currently looking for a Software Developer position where I can apply my programming skills to solve any challenge that is thrown at me.
           </p>
           <p>
-            Besides from coding, I love trying out new food and different beers around the world. I enjoy playing golf, basketball, snowboarding, and lifting. Also love traveling to new places to learn and experience cultures out there.
+            Besides coding, I love trying new food and different beers around the world. I enjoy playing golf, basketball, snowboarding, and lifting. I also enjoy traveling to new places and learning about different cultures.
           </p>
         </span>
       </div>
