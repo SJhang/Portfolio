@@ -189,7 +189,7 @@ const Resume = (props) => {
               &nbsp;&nbsp;&nbsp;EXPERIENCE
             </h2>
             <div className="experience-detail">
-              <div className="china-pacific">
+              <div className="cacaoDev">
                 <div className="lines-four">
                   <div></div>
                   <div className="box-line"></div>
@@ -197,17 +197,18 @@ const Resume = (props) => {
                   <div></div>
                 </div>
                 <div className="exp-title">
-                  <div className="name">China Pacific</div>
-                  <div className="exp-length">Sept 2014 - May 2016</div>
+                  <div className="name">CacaoDev</div>
+                  <div className="exp-length">July 2015 - May 2016</div>
                 </div>
                 <div className="exp-details">
-                  <div className="position">Web Developer / Waiter</div>
+                  <div className="position">JavaScript Developer</div>
                   <div className="position-desc">
-                    <span>Served 60 or more customers each shift working 20 hours per week while maintaining full-­‐time student status</span>
+                    <span>Remotely developed highly time sensitive web-based products</span>
+                    <span>Modulized and componentized features to reduce hassle for clients</span>
                   </div>
                 </div>
               </div>
-              <div className="LLC">
+              <div className="china-pacific">
                 <div className="lines-five">
                   <div></div>
                   <div className="box-line"></div>
@@ -215,14 +216,13 @@ const Resume = (props) => {
                   <div></div>
                 </div>
                 <div className="exp-title">
-                  <div className="name">Wecon LLC</div>
-                  <div className="exp-length">Mar 2009 - May 2011</div>
+                  <div className="name">China Pacific</div>
+                  <div className="exp-length">Sept 2014 - May 2015</div>
                 </div>
                 <div className="exp-details">
-                  <div className="position">Document translator</div>
+                  <div className="position">Web Developer / Waiter</div>
                   <div className="position-desc">
-                    <span>Translated semiconductor circuit networks related documents Korean to English and English to Korean</span>
-                    <span></span>
+                    <span>Served 60 or more customers each shift working 20 hours per week while maintaining full-­‐time student status</span>
                   </div>
                 </div>
               </div>

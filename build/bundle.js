@@ -40906,22 +40906,22 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "I am a full stack web developer. Passionate about building beautiful and efficient websites."
+	          "I am a full stack web developer who is passionate about building beautiful and efficient websites."
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "After graduating from UT Austin, I have studied my own and attended full time courses to pursue my desire for learning programming languages and new technologies."
+	          "After graduating from UT Austin, I studied on my own and attended full time courses to pursue my desire for learning programming languages and new technologies."
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "I am currently looking for a Software Developer position where I can apply my programming skills to solve any challenges that can be thrown at me."
+	          "I am currently looking for a Software Developer position where I can apply my programming skills to solve any challenge that is thrown at me."
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Besides from coding, I love trying out new food and different beers around the world. I enjoy playing golf, basketball, snowboarding, and lifting. Also love traveling to new places to learn and experience cultures out there."
+	          "Besides coding, I love trying new food and different beers around the world. I enjoy playing golf, basketball, snowboarding, and lifting. I also enjoy traveling to new places and learning about different cultures."
 	        )
 	      )
 	    )
@@ -41431,7 +41431,7 @@
 	            { className: "experience-detail" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "china-pacific" },
+	              { className: "cacaoDev" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "lines-four" },
@@ -41446,12 +41446,61 @@
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "name" },
+	                  "CacaoDev"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "exp-length" },
+	                  "July 2015 - May 2016"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position" },
+	                  "JavaScript Developer"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position-desc" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Remotely developed highly time sensitive web-based products"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Modulized and componentized features to reduce hassle for clients"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "china-pacific" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-five" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "box-line" }),
+	                _react2.default.createElement("div", { className: "line-circle-five" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
 	                  "China Pacific"
 	                ),
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "exp-length" },
-	                  "Sept 2014 - May 2016"
+	                  "Sept 2014 - May 2015"
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -41470,51 +41519,6 @@
 	                    null,
 	                    "Served 60 or more customers each shift working 20 hours per week while maintaining full-\xAD\u2010time student status"
 	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "LLC" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "lines-five" },
-	                _react2.default.createElement("div", null),
-	                _react2.default.createElement("div", { className: "box-line" }),
-	                _react2.default.createElement("div", { className: "line-circle-five" }),
-	                _react2.default.createElement("div", null)
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "exp-title" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "name" },
-	                  "Wecon LLC"
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "exp-length" },
-	                  "Mar 2009 - May 2011"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "exp-details" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "position" },
-	                  "Document translator"
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "position-desc" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "Translated semiconductor circuit networks related documents Korean to English and English to Korean"
-	                  ),
-	                  _react2.default.createElement("span", null)
 	                )
 	              )
 	            )
