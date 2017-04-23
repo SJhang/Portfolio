@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./lib/main.jsx",
+  entry: "main.jsx",
   output: {
     path: path.join(__dirname, 'build'),
     filename: "bundle.js",
@@ -18,8 +18,15 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./assets/sass/main")]
   },
   devtool: 'source-map',
   resolve: {

@@ -257,13 +257,13 @@ const Resume = (props) => {
                 <li className="highlight">POSTGRESQL  &#x2605;</li>
                 <li className="highlight">REACT/REDUX  &#x2605;</li>
                 <li className="highlight">CSS 3  &#x2605;</li>
+                <li className="highlight">BOOTSTRAP  &#x2605;</li>
                 <li>NODE.JS</li>
                 <li>PYTHON</li>
                 <li>D3.JS</li>
                 <li>MYSQL</li>
                 <li>JASMINE</li>
                 <li>CREATE.JS</li>
-                <li>&nbsp;</li>
                 <li>&nbsp;</li>
                 <li>&nbsp;</li>
                 <li className="highlight">&#x2605;&nbsp;

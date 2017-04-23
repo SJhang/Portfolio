@@ -2,35 +2,6 @@ import React from 'react';
 import $ from 'jquery';
 
 const Assets = ({scrollTo}) => {
-  // const showName = (name) => {
-  //   let mouseX = 0, mouseY = 0, limitX = 15, limitY = 15;
-  //
-  //   //cache the selector
-  //   let follower = null;
-  //   let xp = 0, yp = 0;
-  //
-  //   $(window).mousemove(e => {
-  //     let $elem = $(document.elementFromPoint(e.pageX, e.pageY));
-  //
-  //     if ($elem.attr("class") === `${name}`) {st
-  //       let offset = $elem.offset();
-  //
-  //       mouseX = Math.min(e.pageX - offset.left, $elem.width() - limitX);
-  //       mouseY = Math.min(e.pageY - offset.top, $elem.height() - limitY);
-  //
-  //       if (mouseX < 0) mouseX = 0;
-  //       if (mouseY < 0) mouseY = 0;
-  //
-  //       xp += (mouseX - xp) / 12;
-  //       yp += (mouseY - yp) / 12;
-  //
-  //       let loop = setInterval(() => {
-  //         $elem.find('.follower').css({left: xp, top: yp});
-  //       }, 30);
-  //     }
-  //   });
-  //
-  // };
   const showName = (e, div) => {
     let mouseX = 0, mouseY = 0;
     let limitX = 15, limitY = 15;
