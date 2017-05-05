@@ -433,7 +433,7 @@
   height: 22px;
   position: absolute;
   left: 48px;
-  top: 1373px;
+  top: 1353px;
   box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.56);
 }
 
@@ -521,7 +521,7 @@ i > h4 {
   justify-content: space-between;
 }
 
-.china-pacific {
+.freeLance {
   width: 100%;
   height: 50%;
   display: flex;
@@ -540,9 +540,17 @@ i > h4 {
 
 .exp-details {
   width: 65%;
-  padding: 20px;
-
+  padding: 20px;  
 }
+
+.cacaoDev .exp-title {
+  padding: 0px 20px 20px 0;
+}
+
+.cacaoDev .exp-details {
+  padding: 0 20px;
+}
+
 
 .exp-title > .name {
   font-size: 18px;

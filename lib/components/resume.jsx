@@ -9,13 +9,14 @@ const Resume = (props) => {
     return window.open("https://github.com/SJhang/Meetups");
   };
 
-  const directToFrozen = () => {
-    return window.open("https://sjhang.github.io/Frozen-Milk/");
-  };
-
-  const directToFrozenGitHub = () => {
-    return window.open("https://github.com/SJhang/Frozen-Milk");
-  };
+  // need to fix
+  // const directToFrozen = () => {
+  //   return window.open("https://sjhang.github.io/Frozen-Milk/");
+  // };
+  //
+  // const directToFrozenGitHub = () => {
+  //   return window.open("https://github.com/SJhang/Frozen-Milk");
+  // };
 
   const directToOvertrack = () => {
     return window.open("http://www.overtrack.win/");
@@ -189,7 +190,7 @@ const Resume = (props) => {
               &nbsp;&nbsp;&nbsp;EXPERIENCE
             </h2>
             <div className="experience-detail">
-              <div className="cacaoDev">
+              <div className="freeLance">
                 <div className="lines-four">
                   <div></div>
                   <div className="box-line"></div>
@@ -197,18 +198,17 @@ const Resume = (props) => {
                   <div></div>
                 </div>
                 <div className="exp-title">
-                  <div className="name">CacaoDev</div>
-                  <div className="exp-length">July 2015 - May 2016</div>
+                  <div className="name">Freelance</div>
+                  <div className="exp-length">May 2016 - current</div>
                 </div>
                 <div className="exp-details">
-                  <div className="position">JavaScript Developer</div>
+                  <div className="position">Full Stack Engineer</div>
                   <div className="position-desc">
-                    <span>Remotely developed highly time sensitive web-based products</span>
-                    <span>Modulized and componentized features to reduce hassle for clients</span>
+                    <span>Develop and design single-page web applications for clients leveraging technologies like ReactJS and Twitter Bootstrap</span>
                   </div>
                 </div>
               </div>
-              <div className="china-pacific">
+              <div className="cacaoDev">
                 <div className="lines-five">
                   <div></div>
                   <div className="box-line"></div>
@@ -216,13 +216,14 @@ const Resume = (props) => {
                   <div></div>
                 </div>
                 <div className="exp-title">
-                  <div className="name">China Pacific</div>
-                  <div className="exp-length">Sept 2014 - May 2015</div>
+                  <div className="name">CacaoDev</div>
+                  <div className="exp-length">July 2015 - May 2016</div>
                 </div>
                 <div className="exp-details">
-                  <div className="position">Web Developer / Waiter</div>
+                  <div className="position">Front End Developer</div>
                   <div className="position-desc">
-                    <span>Served 60 or more customers each shift working 20 hours per week while maintaining full-­‐time student status</span>
+                    <span>Remotely developed highly time sensitive web-based products</span>
+                    <span>Modulized and componentized features to reduce hassle for clients</span>
                   </div>
                 </div>
               </div>
@@ -257,14 +258,14 @@ const Resume = (props) => {
                 <li className="highlight">POSTGRESQL  &#x2605;</li>
                 <li className="highlight">REACT/REDUX  &#x2605;</li>
                 <li className="highlight">CSS 3  &#x2605;</li>
+                <li className="highlight">SASS  &#x2605;</li>
                 <li className="highlight">BOOTSTRAP  &#x2605;</li>
-                <li>NODE.JS</li>
+                <li className="highlight">NODE.JS  &#x2605;</li>
                 <li>PYTHON</li>
                 <li>D3.JS</li>
                 <li>MYSQL</li>
                 <li>JASMINE</li>
                 <li>CREATE.JS</li>
-                <li>&nbsp;</li>
                 <li>&nbsp;</li>
                 <li className="highlight">&#x2605;&nbsp;
                   <div className="no-style">stronger skills</div>

@@ -1,8 +1,13 @@
-var path = require("path");
+const path = require("path");
+const webpack = require("webpack");
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+const isProduction = nodeEnv === 'production';
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname,
-  entry: "main.jsx",
+  entry: "./lib/main.jsx",
   output: {
     path: path.join(__dirname, 'build'),
     filename: "bundle.js",
@@ -21,17 +26,24 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        exclude:/node_modules/,
+        include: path.resolve(__dirname, './style'),
+        loader: ExtractTextPlugin.extract(
+          'style-loader?sourceMap!css-loader?sourceMap!scss-loader?sourceMap'
+        )
       }
     ]
-  },
-  sassLoader: {
-    includePaths: [path.resolve(__dirname, "./assets/sass/main")]
   },
   devtool: 'source-map',
   resolve: {
     extensions: ["", ".js", ".jsx" ],
     alias: { clipboard: 'clipboard/lib/clipboard' }
+  },
+  plugins:[
+    new ExtractTextPlugin('style/main.scss')
+  ],
+  sassLoader: {
+    includePaths: ['style/sass']
   },
   devServer: { inline: true }
 };

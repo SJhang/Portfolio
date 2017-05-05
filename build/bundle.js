@@ -42209,13 +42209,14 @@
 	    return window.open("https://github.com/SJhang/Meetups");
 	  };
 	
-	  var directToFrozen = function directToFrozen() {
-	    return window.open("https://sjhang.github.io/Frozen-Milk/");
-	  };
-	
-	  var directToFrozenGitHub = function directToFrozenGitHub() {
-	    return window.open("https://github.com/SJhang/Frozen-Milk");
-	  };
+	  // need to fix
+	  // const directToFrozen = () => {
+	  //   return window.open("https://sjhang.github.io/Frozen-Milk/");
+	  // };
+	  //
+	  // const directToFrozenGitHub = () => {
+	  //   return window.open("https://github.com/SJhang/Frozen-Milk");
+	  // };
 	
 	  var directToOvertrack = function directToOvertrack() {
 	    return window.open("http://www.overtrack.win/");
@@ -42611,13 +42612,57 @@
 	            { className: "experience-detail" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "cacaoDev" },
+	              { className: "freeLance" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "lines-four" },
 	                _react2.default.createElement("div", null),
 	                _react2.default.createElement("div", { className: "box-line" }),
 	                _react2.default.createElement("div", { className: "line-circle-four" }),
+	                _react2.default.createElement("div", null)
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-title" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "name" },
+	                  "Freelance"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "exp-length" },
+	                  "May 2016 - current"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "exp-details" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position" },
+	                  "Full Stack Engineer"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "position-desc" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "Develop and design single-page web applications for clients leveraging technologies like ReactJS and Twitter Bootstrap"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "cacaoDev" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "lines-five" },
+	                _react2.default.createElement("div", null),
+	                _react2.default.createElement("div", { className: "box-line" }),
+	                _react2.default.createElement("div", { className: "line-circle-five" }),
 	                _react2.default.createElement("div", null)
 	              ),
 	              _react2.default.createElement(
@@ -42640,7 +42685,7 @@
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "position" },
-	                  "JavaScript Developer"
+	                  "Front End Developer"
 	                ),
 	                _react2.default.createElement(
 	                  "div",
@@ -42654,50 +42699,6 @@
 	                    "span",
 	                    null,
 	                    "Modulized and componentized features to reduce hassle for clients"
-	                  )
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "china-pacific" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "lines-five" },
-	                _react2.default.createElement("div", null),
-	                _react2.default.createElement("div", { className: "box-line" }),
-	                _react2.default.createElement("div", { className: "line-circle-five" }),
-	                _react2.default.createElement("div", null)
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "exp-title" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "name" },
-	                  "China Pacific"
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "exp-length" },
-	                  "Sept 2014 - May 2015"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "exp-details" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "position" },
-	                  "Web Developer / Waiter"
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "position-desc" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "Served 60 or more customers each shift working 20 hours per week while maintaining full-\xAD\u2010time student status"
 	                  )
 	                )
 	              )
@@ -42820,12 +42821,17 @@
 	              _react2.default.createElement(
 	                "li",
 	                { className: "highlight" },
+	                "SASS  \u2605"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                { className: "highlight" },
 	                "BOOTSTRAP  \u2605"
 	              ),
 	              _react2.default.createElement(
 	                "li",
-	                null,
-	                "NODE.JS"
+	                { className: "highlight" },
+	                "NODE.JS  \u2605"
 	              ),
 	              _react2.default.createElement(
 	                "li",
@@ -42851,11 +42857,6 @@
 	                "li",
 	                null,
 	                "CREATE.JS"
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "\xA0"
 	              ),
 	              _react2.default.createElement(
 	                "li",

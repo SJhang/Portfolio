@@ -24,18 +24,21 @@
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "redux": "^3.6.0",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.3"
+    "webpack": "^1.15.0"
   },
   "devDependencies": {
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.9.0"
   },
   "description": "",
   "peerDependencies": {
     "node-sass": "^4.5.2",
-    "webpack": "^1.15.0"
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.9.0"
   }
 }
