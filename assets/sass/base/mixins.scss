@@ -1,0 +1,23 @@
+$breakpoints: (
+  "phone-screen"  : 540px,
+  "sm-screen"  : 768px,
+  "med-screen" : 992px,
+  "lg-screen"  : 1200px
+);
+
+@mixin respond-to($media) {
+  $value: map-get($breakpoints, $media);
+
+  @if ($value == 540px) {
+    @media screen and (max-width: $value) { @content; };
+  }
+  @else if ($value == 768px) {
+    @media screen and (min-width: 768px) and (max-width: 991px) { @content; };
+  }
+  @else if ($value == 992px) {
+    @media screen and (min-width: 992px) and (max-width: 1199px) { @content; };
+  }
+  @else if ($value == 1200px) {
+    @media screen and (min-width: 1200px) { @content; };
+  }
+}

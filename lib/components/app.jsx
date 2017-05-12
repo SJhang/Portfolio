@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './footer';
-import Header from './header';
+import Navbar from './nav';
 import $ from 'jquery';
 
 const App = ({ children }) => {
@@ -13,8 +13,8 @@ const App = ({ children }) => {
   };
 
   return (
-    <div className="app">
-      <Header scrollTo={div => scrollTo(div)}/>
+    <div className="container-fluid">
+      <Navbar scrollTo={div => scrollTo(div)}/>
         {children}
       <Footer />
     </div>

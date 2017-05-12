@@ -1,11 +1,15 @@
+$bootstrap-sass-asset-helper: true;
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import 'sass/base/global';
+@import 'sass/base/mixins';
+
 @import 'sass/components/about';
 @import 'sass/components/assets';
 @import 'sass/components/contact';
 @import 'sass/components/footer';
-@import 'sass/components/header';
+@import 'sass/components/nav';
 @import 'sass/components/intro';
 @import 'sass/components/layout';
-@import 'sass/components/main_page';
 @import 'sass/components/projects';
-@import 'sass/components/reset';
 @import 'sass/components/resume';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 import $ from 'jquery';
 
-const Header = ({scrollTo, router}) => {
+const Navbar = ({scrollTo, router}) => {
   const directToIntro = () => {
     if (location.hash.split('/')[1] === "") {
       scrollTo('intro');
@@ -32,41 +32,33 @@ const Header = ({scrollTo, router}) => {
   };
 
   return (
-    <div className="global-header">
-      <div className="header-content">
-        <div className="title">
-          <div>
+    <div
+      className="navbar navbar-default navbar-fixed-top"
+      id="global-nav">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 nav-title">
             <Link onClick={() => directToIntro()}>
-              &lt;<h4>Portfolio</h4>&gt;
+              &lt;<h2>Portfolio</h2>&gt;
             </Link>
           </div>
-        </div>
-        <div className="menu">
-          <li>
-            <Link onClick={() => directToProjects()}>
+          <ul className="col-xs-9 col-sm-9 col-md-9 col-lg-9 nav-menu">
+            <li onClick={() => directToProjects()}>
               &lt;<h4>Projects</h4>&#8260;&gt;
-            </Link>
-          </li>
-          <li>
-            <Link onClick={() => directToAssets()}>
+            </li>
+            <li onClick={() => directToAssets()}>
               &lt;<h4>Assets</h4>&#8260;&gt;
-            </Link>
-          </li>
-          <li>
-            <Link onClick={() => directToAbout()}>
+            </li>
+            <li onClick={() => directToAbout()}>
               &lt;<h4>About</h4>&#8260;&gt;
-            </Link>
-          </li>
-          <li>
-            <Link onClick={() => directToContact()}>
+            </li>
+            <li onClick={() => directToContact()}>
               &lt;<h4>Contact</h4>&#8260;&gt;
-            </Link>
-          </li>
-          <li>
-            <Link onClick={() => directToResume()}>
+            </li>
+            <li onClick={() => directToResume()}>
               &lt;<h4>Resume</h4>&#8260;&gt;
-            </Link>
-          </li>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -77,4 +69,4 @@ const Header = ({scrollTo, router}) => {
 //   <i className="fa fa-terminal fa-stack-1x fa-inverse"></i>
 // </span>
 
-export default withRouter(Header);
+export default withRouter(Navbar);

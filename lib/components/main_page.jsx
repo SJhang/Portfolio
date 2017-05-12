@@ -22,13 +22,11 @@ const Content = (props) => {
 
   return (
     <div className="main-content">
-      <div className="contents">
-        <Intro scrollTo={div => scrollTo(div)}/>
-        <Projects scrollTo={div => scrollTo(div)}/>
-        <Assets scrollTo={div => scrollTo(div)}/>
-        <About scrollTo={div => scrollTo(div)}/>
-        <Contact scrollTo={div => scrollTo(div)}/>
-      </div>
+      <Intro scrollTo={div => scrollTo(div)}/>
+      <Projects scrollTo={div => scrollTo(div)}/>
+      <Assets scrollTo={div => scrollTo(div)}/>
+      <About scrollTo={div => scrollTo(div)}/>
+      <Contact scrollTo={div => scrollTo(div)}/>
     </div>
   );
 };
