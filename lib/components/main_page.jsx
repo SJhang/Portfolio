@@ -21,7 +21,7 @@ const Content = (props) => {
   };
 
   return (
-    <div className="main-content">
+    <div className="container-fluid main-content">
       <Intro scrollTo={div => scrollTo(div)}/>
       <Projects scrollTo={div => scrollTo(div)}/>
       <Assets scrollTo={div => scrollTo(div)}/>

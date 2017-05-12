@@ -22,7 +22,7 @@ const Links = (props) => {
   };
 
   return (
-    <div className="links">
+    <ul className="links">
       <li className="fa-stack fa-lg" onClick={() => openPdf()}>
         <i className="fa fa-circle-thin fa-stack-2x" aria-hidden="true"/>
         <i className="fa fa-file-pdf-o fa-stack-1x" aria-hidden="true"></i>
@@ -43,7 +43,7 @@ const Links = (props) => {
         <i className="fa fa-circle-thin fa-stack-2x" aria-hidden="true"/>
         <i className="fa fa-envelope-o fa-stack-1x" aria-hidden="true"></i>
       </li>
-    </div>
+    </ul>
   );
 };
 
