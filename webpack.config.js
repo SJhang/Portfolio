@@ -1,9 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
-
-const nodeEnv = process.env.NODE_ENV || 'development';
-const isProduction = nodeEnv === 'production';
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname,
@@ -15,35 +10,34 @@ module.exports = {
     devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
         }
       },
       {
         test: /\.scss$/,
-        exclude:/node_modules/,
-        include: path.resolve(__dirname, './style'),
-        loader: ExtractTextPlugin.extract(
-          'style-loader?sourceMap!css-loader?sourceMap!scss-loader?sourceMap'
-        )
+        exclude: /node_modules/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader', options: { sourceMap: true }},
+          { loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              includePaths: [path.resolve(__dirname, 'assets')]
+            }
+          }
+        ]
       }
     ]
   },
-  devtool: 'source-map',
   resolve: {
-    extensions: ["", ".js", ".jsx" ],
+    extensions: [".js", ".jsx", "*" ],
     alias: { clipboard: 'clipboard/lib/clipboard' }
   },
-  plugins:[
-    new ExtractTextPlugin('style/main.scss')
-  ],
-  sassLoader: {
-    includePaths: ['style/sass']
-  },
-  devServer: { inline: true }
+  devtool: 'source-map'
 };
