@@ -1,146 +1,75 @@
 import React from 'react';
+import SingleProject from '../modules/single-project';
 import $ from 'jquery';
 
 const Projects = ({scrollTo}) => {
   const scrollPosition = $(window).scrollTop();
-  const stickerIndicator = () => {
+  const directToMeetup = () => window.open("https://meet-ups.herokuapp.com/#/");
+  const directToMeetupGithub = () => window.open("https://github.com/SJhang/Meetups");
+  const directToFrozen = () => window.open("https://sjhang.github.io/Frozen-Milk/");
+  const directToFrozenGitHub = () => window.open("https://github.com/SJhang/Frozen-Milk");
+  const directToOvertrack = () => window.open("http://www.overtrack.win/");
+  const directToOvertrackGithub = () => window.open("https://github.com/Sebastiansc/Overtrack");
+  const directToYouTook = () => window.open("https://sjhang.github.io/YouTook/");
+  const directToYouTookGitHub = () => window.open("https://github.com/SJhang/YouTook");
+
+  const meetupOpts = {
+    title: "MeetUps",
+    directToGithub: () => directToMeetup(),
+    directToLive: () => directToMeetupGithub(),
+    blurb: "Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user's location to find events nearby.",
+    assets: [
+      "Ruby", "Rails", "JavaScript", "jQuery", "ReactJS",
+      "Redux", "PostgreSQL", "Webpack", "Git", "SASS", "HTML5", "Heroku"
+    ],
+    overview: "https://res.cloudinary.com/dsetpdsls/image/upload/v1487096033/meetups_kkubiw.png"
   };
 
-  const directToMeetup = () => {
-    return window.open("https://meet-ups.herokuapp.com/#/");
+  const overtrackOpts = {
+    title: "Overtrack",
+    directToGithub: () => directToOvertrackGithub(),
+    directToLive: () => directToOvertrack(),
+    blurb: "Overtrack is a single-page web applicatoin analyzing player statistics for League of Legends. It uses Riot's public API to collect data from tens of thousands of players and allow user's to view it. I strongly leveraged PostgreSQL json data type to seamlessly store and serve large amounts of data. Implemented Redis on Ruby on Rails to cut response times by more than 70%.",
+    overview: "https://res.cloudinary.com/dsetpdsls/image/upload/v1487096031/overtrack_d1z0fb.png",
+    assets: [
+      "Ruby", "Rails", "JavaScript", "Redis", "jQuery",
+      "ReactJS", "Redux", "PostgreSQL", "Git", "Webpack",
+      "CSS", "HTML5", "Heroku"
+    ]
   };
 
-  const directToMeetupGithub = () => {
-    return window.open("https://github.com/SJhang/Meetups");
+  const frozenMilkOpts = {
+    title: "Frozen Milk",
+    directToGithub: () => directToFrozenGitHub(),
+    directToLive: () => directToFrozen(),
+    blurb: "Frozen Milk is an interactive web browser game built using JavaScript, HTML5 Canvas, and CreateJS. Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score.",
+    overview: "https://res.cloudinary.com/dsetpdsls/image/upload/v1487096032/frozen-milk_v5e3te.png",
+    assets: [
+      "JavaScript", "CreateJS", "Canvas", "HTML5", "CSS",
+      "Git", "Webpack", "Github", "jQuery"
+    ]
   };
 
-  const directToFrozen = () => {
-    return window.open("https://sjhang.github.io/Frozen-Milk/");
-  };
-
-  const directToFrozenGitHub = () => {
-    return window.open("https://github.com/SJhang/Frozen-Milk");
-  };
-
-  const directToOvertrack = () => {
-    return window.open("http://www.overtrack.win/");
-  };
-
-  const directToOvertrackGithub = () => {
-    return window.open("https://github.com/Sebastiansc/Overtrack");
+  const youTookOpts = {
+    title: "YouTook",
+    directToGithub: () => directToYouTookGitHub(),
+    directToLive: () => directToYouTook(),
+    blurb: "YouTook is a Single-page application for streaming your favorite music",
+    overview: "",
+    assets: [
+      "ReactJS", "JavaScript", "YouTube API", "Webpack", "Bootstrap",
+      "HTML5", "SASS", "Git", "jQuery", "localStorage"
+    ]
   };
 
   return (
-    <div className="projects">
-      <h1 className="title-project">Projects</h1>
-      <div className="project-div">
-        <div className="meetups">
-          <div className="description">
-            <div className="project-name">
-              <h1>MeetUps</h1>
-              <div className="projects-links">
-                <i
-                  className="fa fa-github fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToMeetupGithub()}/>
-                <i
-                  className="fa fa-globe fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToMeetup()}/>
-              </div>
-            </div>
-            <p className="project-blurb">
-              Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user's location to find events nearby.
-            </p>
-            <ul className="project-assets">
-              <li>Ruby</li>
-              <li>Rails</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>PostgreSQL</li>
-              <li>Webpack</li>
-              <li>Git</li>
-              <li>SASS</li>
-              <li>HTML5</li>
-              <li>Heroku</li>
-            </ul>
-          </div>
-          <div className="overview">
-            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096033/meetups_kkubiw.png"></img>
-          </div>
-        </div>
-        <div className="frozen-milk">
-          <div className="description">
-            <div className="project-name">
-              <h1>Frozen Milk</h1>
-              <div className="projects-links">
-                <i
-                  className="fa fa-github fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToFrozenGitHub()}/>
-                <i
-                  className="fa fa-globe fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToFrozen()}/>
-              </div>
-            </div>
-            <p className="project-blurb">
-              Frozen Milk is an interactive web browser game built using JavaScript, HTML5 Canvas, and CreateJS. Implemented HTML5 local storage access functionality with cookie fallback to keep track of the highest score.
-            </p>
-            <ul className="project-assets">
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>CreatJS</li>
-              <li>CSS</li>
-              <li>HTML5</li>
-              <li>Git</li>
-              <li>Webpack</li>
-            </ul>
-          </div>
-          <div className="overview">
-            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096032/frozen-milk_v5e3te.png"></img>
-          </div>
-        </div>
-        <div className="overtrack">
-          <div className="description">
-            <div className="project-name">
-              <h1>Overtrack</h1>
-              <div className="projects-links">
-                <i
-                  className="fa fa-github fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToOvertrackGithub()}/>
-                <i
-                  className="fa fa-globe fa-1x"
-                  aria-hidden="true"
-                  onClick={() => directToOvertrack()}/>
-              </div>
-            </div>
-            <p className="project-blurb">
-              Overtrack is a single-page web applicatoin analyzing player statistics for League of Legends. It uses Riot's public API to collect data from tens of thousands of players and allow user's to view it. I strongly leveraged PostgreSQL json data type to seamlessly store and serve large amounts of data. Implemented Redis on Ruby on Rails to cut response times by more than 70%.
-            </p>
-            <ul className="project-assets">
-              <li>Ruby</li>
-              <li>Rails</li>
-              <li>JavaScript</li>
-              <li>Redis</li>
-              <li>jQuery</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>PostgreSQL</li>
-              <li>Webpack</li>
-              <li>Git</li>
-              <li>CSS</li>
-              <li>HTML5</li>
-              <li>Heroku</li>
-            </ul>
-          </div>
-          <div className="overview">
-            <img src="https://res.cloudinary.com/dsetpdsls/image/upload/v1487096031/overtrack_d1z0fb.png"></img>
-          </div>
-        </div>
+    <div className="row projects">
+      <h1>Projects</h1>
+      <div className="proj-wrapper">
+        <SingleProject opts={meetupOpts} />
+        <SingleProject opts={overtrackOpts} />
+        <SingleProject opts={frozenMilkOpts} />
+        <SingleProject opts={youTookOpts}/>
       </div>
     </div>
   );

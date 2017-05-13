@@ -1,0 +1,98 @@
+.proj {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: 0 auto;
+
+  @include respond-to("phone-screen") {
+    flex-direction: column;
+  };
+  @include respond-to("sm-screen") {
+    flex-direction: column;
+  };
+}
+
+.pd {
+  @include respond-to("phone-screen") {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  };
+
+  @include respond-to("sm-screen") {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  };
+
+}
+
+.po {
+  width: 70%;
+
+  @include respond-to("phone-screen") {
+    margin-bottom: 20px;
+  };
+
+  @include respond-to("sm-screen") {
+    margin-bottom: 20px;
+  };
+}
+
+.pd-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.pd-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120px;
+  margin-left: 20px;
+
+  i {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+.pd-blurb {
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+
+.pd-assets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-decoration: none;
+  padding: 0;
+
+  li {
+    min-width: 100px;
+    list-style: none;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 1.7rem;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+  }
+}

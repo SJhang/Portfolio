@@ -11,5 +11,6 @@ $bootstrap-sass-asset-helper: true;
 @import 'sass/components/nav';
 @import 'sass/components/intro';
 @import 'sass/components/layout';
-@import 'sass/components/projects';
 @import 'sass/components/resume';
+
+@import 'sass/modules/project';

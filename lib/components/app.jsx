@@ -13,7 +13,7 @@ const App = ({ children }) => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="app">
       <Navbar scrollTo={div => scrollTo(div)}/>
         {children}
       <Footer />
