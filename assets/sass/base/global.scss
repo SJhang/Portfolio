@@ -3,6 +3,7 @@ $montserrat: "Montserrat", sans-serif;
 #global-nav {
   min-height: 60px;
   background-color: #FFF;
+  border: none;
 }
 
 .main-content {
@@ -27,5 +28,26 @@ $montserrat: "Montserrat", sans-serif;
     margin: 0 auto;
     line-height: 120px;
     border-bottom: 5px solid white;
+  }
+}
+
+#toggle-button {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  z-index: 5000;
+  visibility: hidden;
+
+  @include respond-to("phone-screen") {
+    visibility: visible;
+    background: white;
+    border: none;
+  };
+}
+
+#app {
+  &.toggled .nav-menu {
+    visibility: visible;
+    height: 30px;
   }
 }

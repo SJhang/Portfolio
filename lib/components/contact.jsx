@@ -7,23 +7,21 @@ const Contact = ({scrollTo}) => {
 
   return (
     <div className="contact">
-      <div className="contact-title">
-        CONTACT
-      </div>
+      <h1>CONTACT</h1>
       <div className="contact-info">
         <div
           className="contact-spec"
           onClick={() => openEmail()}>
-          <i className="fa fa-envelope" aria-hidden="true"></i>
-          <h2>sonik.jhang@utexas.edu</h2>
+          <i className="fa fa-envelope fa-3x animated infinite rubberBand" aria-hidden="true"></i>
+          <h4>sonik4595@gmail.com</h4>
         </div>
         <div className="contact-spec">
-          <i className="fa fa-map-marker" aria-hidden="true"></i>
-          <h2>San Francisco, CA</h2>
+          <i className="fa fa-map-marker fa-3x animated infinite bounce" aria-hidden="true"></i>
+          <h4>San Francisco, CA</h4>
         </div>
         <div className="contact-spec">
-          <i className="fa fa-phone" aria-hidden="true"></i>
-          <h2>512 850-2709</h2>
+          <i className="fa fa-phone fa-3x animated infinite shake" aria-hidden="true"></i>
+          <h4>512 850-2709</h4>
         </div>
       </div>
     </div>

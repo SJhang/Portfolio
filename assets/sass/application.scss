@@ -1,8 +1,8 @@
 $bootstrap-sass-asset-helper: true;
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-@import 'sass/base/global';
 @import 'sass/base/mixins';
+@import 'sass/base/global';
 
 @import 'sass/components/about';
 @import 'sass/components/assets';
@@ -10,7 +10,6 @@ $bootstrap-sass-asset-helper: true;
 @import 'sass/components/footer';
 @import 'sass/components/nav';
 @import 'sass/components/intro';
-@import 'sass/components/layout';
 @import 'sass/components/resume';
 
 @import 'sass/modules/project';

@@ -9,7 +9,7 @@ $breakpoints: (
   $value: map-get($breakpoints, $media);
 
   @if ($value == 540px) {
-    @media screen and (max-width: $value) { @content; };
+    @media screen and (max-width: 767px) { @content; };
   }
   @else if ($value == 768px) {
     @media screen and (min-width: 768px) and (max-width: 991px) { @content; };

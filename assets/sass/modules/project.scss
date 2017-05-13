@@ -3,23 +3,41 @@
 }
 
 .proj {
-  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid white;
-  width: 70%;
-  margin: 0 auto;
+  border-bottom: 2px solid white;
+  margin: 40px auto;
+  width: 80%;
+  padding-bottom: 50px;
 
   @include respond-to("phone-screen") {
     flex-direction: column;
+    width: 70%;
+    padding-bottom: 0;
   };
+
   @include respond-to("sm-screen") {
     flex-direction: column;
+    width: 70%;
+    padding-bottom: 0;
   };
 }
 
 .pd {
+  font-family: 'Montserrat', sans-serif;
+
+  .pd-blurb {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 25px;
+  }
+
+  .pd-assets {
+    margin: 20px;
+    font-weight: 100;
+  }
+
   @include respond-to("phone-screen") {
     display: flex;
     align-items: center;
@@ -37,15 +55,25 @@
 }
 
 .po {
-  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
 
+  img { width: 450px; }
   @include respond-to("phone-screen") {
     margin-bottom: 20px;
+    img { width: 110%; }
   };
 
   @include respond-to("sm-screen") {
     margin-bottom: 20px;
+    img { width: 70%; }
   };
+
+  &:hover, &:focus {
+    transform: scale(1.2);
+  }
 }
 
 .pd-name {

@@ -15,6 +15,9 @@
   margin-top: 30px;
   padding-left: 0;
 
+  @include respond-to("phone-screen") { width: 100%; };
+  // @include respond-to("sm-screen") { width: 30%; };
+
   li {
     cursor: pointer;
     text-decoration: none;

@@ -1,51 +1,34 @@
 .contact {
-  height: 760px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.contact-title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  color: black;
-  width: 200px;
-  margin: 0 auto;
-  line-height: 120px;
-  border-bottom: 5px solid black;
+  h1 {
+    @extend .assets-title;
+  }
 }
 
 .contact-info {
-  height: 200px;
+  width: 70%;
   display: flex;
   justify-content: space-around;
-  width: 1000px;
-  margin: 0 auto;
-}
+  align-items: center;
+  margin: 120px auto;
+  @include respond-to("phone-screen") {
+    flex-direction: column;
+    margin: 60px auto;
 
-.contact-spec {
-  width: 184px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80px;
-  text-align: center;
-}
+    div { margin: 20px; }
+  };
 
-.contact-spec i:first-child {
-  font-size: 30px;
-}
+  div {
+    min-width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 
-.contact-spec i:hover {
-  cursor: pointer;
-}
+    &:hover, &:focus {
+      transform: scale(1.2);
+    }
 
-.contact-spec h2:hover {
-  cursor: pointer;
+    h4 {
+      margin-top: 25px;
+    }
+  }
 }

@@ -12,9 +12,17 @@ const App = ({ children }) => {
     );
   };
 
+  const handleToggle = (e) => {
+    let app = $('#app');
+    app.toggleClass("toggled");
+  };
+
   return (
-    <div className="app">
+    <div id="app">
       <Navbar scrollTo={div => scrollTo(div)}/>
+      <button id="toggle-button" onClick={e => handleToggle(e)}>
+        <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
         {children}
       <Footer />
     </div>

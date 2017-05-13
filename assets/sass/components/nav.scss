@@ -7,6 +7,13 @@
   height: 100%;
 }
 
+.nav-columns {
+  display: flex;
+  justify-content: space-around;
+
+  @include respond-to("phone-screen") { flex-direction: column; };
+}
+
 .nav-title {
   display: flex;
   height: 60px;
@@ -14,7 +21,7 @@
   font-size: 24px;
   text-decoration: none;
   justify-content: center;
-
+  cursor: pointer;
   a {
     display: flex;
     color: black;
@@ -63,4 +70,12 @@
       }
     }
   }
+
+  @include respond-to("phone-screen") {
+    visibility: hidden;
+    height: 0;
+
+    li { font-size: 0rem; height: 40px; }
+    h4 { font-size: 1.5rem; }
+  };
 }

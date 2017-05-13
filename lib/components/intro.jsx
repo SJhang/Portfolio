@@ -11,7 +11,7 @@ class Intro extends React.Component {
       class: "shake"
     }
   }
-  
+
   handleClick(e) {
     let titleList = [
       "Software Engineer",

@@ -11,7 +11,7 @@
   padding: 30px 0;
 
   @include respond-to("phone-screen") {
-
+    flex-direction: column;
   };
 
   @include respond-to("sm-screen") {
