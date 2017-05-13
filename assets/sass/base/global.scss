@@ -7,9 +7,10 @@ $montserrat: "Montserrat", sans-serif;
 
 .main-content {
   margin-top: 71px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.projects {
+.dark-wrapper {
   background: #303030;
   color: white;
   display: flex;
@@ -22,7 +23,7 @@ $montserrat: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: white;
-    width: 200px;
+    min-width: 200px;
     margin: 0 auto;
     line-height: 120px;
     border-bottom: 5px solid white;

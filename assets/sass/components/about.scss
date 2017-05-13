@@ -1,44 +1,35 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  height: 760px;
-  margin: 0 auto;
-  background: #303030;
-}
-
-.about-title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  color: white;
-  width: 200px;
-  margin: 0 auto;
-  line-height: 120px;
-  border-bottom: 5px solid white;
+  @extend .dark-wrapper;
 }
 
 .about-content {
   width: 70%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  margin-top: 70px;
+  justify-content: space-between;
+  margin-top: 70px auto 0;
+  align-items: center;
+  padding: 30px 0;
+
+  @include respond-to("phone-screen") {
+
+  };
+
+  @include respond-to("sm-screen") {
+
+  };
 }
 
 .about-pic {
   width: 280px;
   height: 375px;
   border-radius: 4px;
-  margin-top: 10px;
+  margin: 10px 30px;
 }
 
 .blurb {
-  width: 60%;
-  height: 100%;
 }
 
 .blurb p {
-  font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px;
   font-weight: 200;
   font-size: 15px;

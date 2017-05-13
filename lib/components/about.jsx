@@ -2,10 +2,8 @@ import React from 'react';
 
 const About = (props) => {
   return (
-    <div className="about">
-      <div className="about-title">
-        ABOUT ME
-      </div>
+    <div className="row about">
+      <h1>ABOUT ME</h1>
       <div className="about-content">
         <img
           className="about-pic"
