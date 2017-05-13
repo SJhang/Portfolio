@@ -18,7 +18,7 @@ const SingleProjects = (props) => {
     <div className="proj">
       <div className="pd">
         <div className="pd-name">
-          <h1>{title}</h1>
+          <h2>{title}</h2>
           <div className="pd-links">
             <i
               className="fa fa-github fa-3x"
