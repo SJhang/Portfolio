@@ -12,20 +12,30 @@ class Intro extends React.Component {
     }
   }
 
-  handleClick(e) {
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      this.setState({ class: "hinge" })
+
+      setTimeout(() => {
+        this.updateClassList();
+      }, 2000);
+    }, 6000);
+  }
+
+  updateClassList() {
     let titleList = [
       "Software Engineer",
       "Front End Engineer",
       "Full Stack Engineer",
       "JavaScript Expert",
       "ReactJS Master",
-      "Ruby on Rails Professional",
+      "Rails Professional",
       "SQL Proficient",
       "Korean"
     ];
     let pos = this.state.position;
     pos++;
-    if (pos > titleList.length) pos = 0;
+    if (pos === titleList.length) pos = 0;
     let classList = [
       "zoomInDown",
       "zoomIn",
@@ -38,14 +48,18 @@ class Intro extends React.Component {
       "fadeInDown",
       "fadeInUp"
     ]
-    this.setState({ class: "tada" });
     setTimeout(() => {
       this.setState({
         position: pos,
         currentTitle: titleList[pos],
         class: this.randomString(classList)
       })
-    }, 1500);
+    }, 2000);
+  }
+
+  handleClick(e) {
+    clearInterval(this.interval);
+    this.updateClassList();
   };
 
   randomString(list) {

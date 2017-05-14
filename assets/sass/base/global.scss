@@ -1,5 +1,14 @@
 $montserrat: "Montserrat", sans-serif;
 
+#app {
+  background-image: url("https://res.cloudinary.com/dvob94x30/image/upload/v1494805717/1_sobpm8.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
 #global-nav {
   min-height: 60px;
   background-color: #FFF;
@@ -12,7 +21,7 @@ $montserrat: "Montserrat", sans-serif;
 }
 
 .dark-wrapper {
-  background: #303030;
+  background: rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
   flex-direction: column;

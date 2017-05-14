@@ -44,11 +44,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 
   li {
     display: flex;
     color: black;
     align-items: center;
+    font-weight: 200;
     height: 60px;
     transition: color 0.1s ease-in;
 

@@ -15,8 +15,8 @@ const Projects = ({scrollTo}) => {
 
   const meetupOpts = {
     title: "MeetUps",
-    directToGithub: () => directToMeetup(),
-    directToLive: () => directToMeetupGithub(),
+    directToGithub: () => directToMeetupGithub(),
+    directToLive: () => directToMeetup(),
     blurb: "Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user's location to find events nearby.",
     assets: [
       "Ruby", "Rails", "JavaScript", "jQuery", "ReactJS",

@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import ReactTooltip from 'react-tooltip'
 
 const Assets = ({scrollTo}) => {
   const assets = [
@@ -27,7 +28,7 @@ const Assets = ({scrollTo}) => {
       let src = item[1];
       return (
         <li key={idx}>
-          <img className="asset" src={src}></img>
+          <img data-tip={name} data-for="assets" className="asset" src={src}></img>
         </li>
       )
     })
@@ -40,6 +41,7 @@ const Assets = ({scrollTo}) => {
       <div className="all-assets">
         {renderAssets(assets)}
       </div>
+      <ReactTooltip id="assets" effects="solid" delayHide={200}/>
     </div>
   );
 };
