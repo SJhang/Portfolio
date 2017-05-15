@@ -77,6 +77,9 @@ class Intro extends React.Component {
             onClick={(e) => this.handleClick(e)}>{this.state.currentTitle}</h2>
           <Links />
         </div>
+        <div className="arrow animated bounce infinite">
+          <i className="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+        </div>
       </div>
     )
   }
