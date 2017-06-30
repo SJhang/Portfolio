@@ -24,9 +24,11 @@
   height: 375px;
   border-radius: 4px;
   margin: 10px 30px;
+  flex: 1;
 }
 
 .blurb {
+  flex: 2;
 }
 
 .blurb p {
