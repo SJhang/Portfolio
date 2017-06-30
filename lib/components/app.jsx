@@ -4,7 +4,6 @@ import Navbar from './nav';
 import $ from 'jquery';
 
 const App = ({ children }) => {
-
   const scrollTo = (div) => {
     let divOffset = $(`.${div}`).offset();
     return (
@@ -19,7 +18,7 @@ const App = ({ children }) => {
 
   return (
     <div id="app">
-      <Navbar scrollTo={div => scrollTo(div)}/>
+      <Navbar scrollTo={div => scrollTo(div)} />
       <button id="toggle-button" onClick={e => handleToggle(e)}>
         <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
       </button>

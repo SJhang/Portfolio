@@ -15,15 +15,15 @@ const Contact = ({scrollTo}) => {
         <div
           className="contact-spec"
           onClick={() => openEmail()}>
-          <i className="fa fa-envelope fa-3x animated infinite rubberBand" aria-hidden="true"></i>
+          <i className="fa fa-envelope fa-3x animated rubberBand" aria-hidden="true"></i>
           <h4>sonik4595@gmail.com</h4>
         </div>
         <div className="contact-spec">
-          <i className="fa fa-map-marker fa-3x animated infinite bounce" aria-hidden="true"></i>
+          <i className="fa fa-map-marker fa-3x animated bounce" aria-hidden="true"></i>
           <h4>San Francisco, CA</h4>
         </div>
         <div className="contact-spec" onClick={() => handlePhoneCall()}>
-          <i className="fa fa-phone fa-3x animated infinite shake" aria-hidden="true"></i>
+          <i className="fa fa-phone fa-3x animated shake" aria-hidden="true"></i>
           <h4>512 850-2709</h4>
         </div>
       </div>

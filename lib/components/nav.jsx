@@ -43,19 +43,29 @@ const Navbar = ({scrollTo, router}) => {
             </Link>
           </div>
           <ul className="col-sm-9 col-md-9 col-lg-9 nav-menu">
-            <li onClick={() => directToProjects()}>
+            <li
+              className="projects-li"
+              onClick={() => directToProjects()}>
               &lt;<h4>Projects</h4>&#8260;&gt;
             </li>
-            <li onClick={() => directToAssets()}>
+            <li
+              className="assets-li"
+              onClick={() => directToAssets()}>
               &lt;<h4>Assets</h4>&#8260;&gt;
             </li>
-            <li onClick={() => directToAbout()}>
+            <li
+              className="about-li"
+              onClick={() => directToAbout()}>
               &lt;<h4>About</h4>&#8260;&gt;
             </li>
-            <li onClick={() => directToContact()}>
+            <li
+              className="contact-li"
+              onClick={() => directToContact()}>
               &lt;<h4>Contact</h4>&#8260;&gt;
             </li>
-            <li onClick={() => directToResume()}>
+            <li
+              className="resume-li"
+              onClick={() => directToResume()}>
               &lt;<h4>Resume</h4>&#8260;&gt;
             </li>
           </ul>

@@ -69,8 +69,8 @@ class Intro extends React.Component {
 
   render () {
     return(
-      <div className="text-center">
-        <div className="intro animated fadeInUp">
+      <div className="text-center intro">
+        <div className="header animated fadeInUp">
           <h1>Sonik Jhang</h1>
           <h2
             className={`title animated ${this.state.class}`}

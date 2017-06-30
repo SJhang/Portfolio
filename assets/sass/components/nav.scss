@@ -50,26 +50,26 @@
     display: flex;
     color: black;
     align-items: center;
-    font-weight: 200;
+    font-weight: 400;
     height: 60px;
     transition: color 0.1s ease-in;
 
     &:hover, &:focus {
+      @extend .focused;
+    }
+
+    &.focused {
       text-decoration: none;
       cursor: pointer;
       border-top: 4px solid #AADA4B;
       transition: border-width 0.2s ease-in-out;
+      color: #AADA4B;
     }
 
     h4 {
       margin: 0;
-      margin-left: 2px;
-      margin-right: 2px;
-
-      &:hover, &:focus {
-        text-decoration: none;
-        color: #AADA4B;
-      }
+      margin-left: 3px;
+      margin-right: 3px;
     }
   }
 
