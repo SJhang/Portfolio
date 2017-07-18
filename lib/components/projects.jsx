@@ -18,6 +18,8 @@ const Projects = ({scrollTo}) => {
   const youtook = "https://sjhang.github.io/YouTook/";
   const portfolioGithub = "https://github.com/SJhang/Portfolio";
   const portfolio = "http://www.sonikjhang.com/#/";
+  const hotspots = "https://www.hotspots.herokuapp.com";
+  const hotspotsGithub = "https://github.com/deokpyo/hotspots";
 
   const meetupOpts = {
     title: "MeetUps",
@@ -79,6 +81,17 @@ const Projects = ({scrollTo}) => {
     overview: ""
   }
 
+  const hotspotsOpts = {
+    title: "HotSpots",
+    directToGithub: () => directToGithub(hotspotsGithub),
+    directToLive: () => directToLive(hotspots),
+    blurb: "Solution for increase frequency of users for travel related products",
+    assets: [
+      "ReactJS", "Redux", "JavaScript", "Webpack", "HTML5", "SASS", "MongoDB", "ExpressJS",
+      "NodeJS"
+    ]
+  }
+
   return (
     <div className="row projects">
       <h1>Projects</h1>
@@ -88,6 +101,7 @@ const Projects = ({scrollTo}) => {
         <SingleProject opts={frozenMilkOpts} />
         <SingleProject opts={youTookOpts}/>
         <SingleProject opts={portfolioOpts}/>
+        <SingleProject opts={hotspotsOpts}/>
       </div>
     </div>
   );
