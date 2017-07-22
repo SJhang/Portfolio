@@ -92,6 +92,15 @@ const Projects = ({scrollTo}) => {
     ]
   }
 
+  const chinaPacificOpts = {
+    title: "China Pacific",
+    directToGithub: () => directToGithub(chinaPacificGithub),
+    directToLive: () => directToLive(chinaPacific),
+    blurb: "Single-page web application for food restaurant. This is a demo version for a restaurant named China Pacific.",
+    assets: [
+      "ReactJS", "Redux", "JavaScript", "Webpack", "HTML5", "SASS", "Ruby on Rails", "Heroku"
+    ]
+  }
   return (
     <div className="row projects">
       <h1>Projects</h1>
@@ -100,6 +109,7 @@ const Projects = ({scrollTo}) => {
         <SingleProject opts={overtrackOpts} />
         <SingleProject opts={frozenMilkOpts} />
         <SingleProject opts={youTookOpts}/>
+        <SingleProject opts={chinaPacificOpts} />
         <SingleProject opts={portfolioOpts}/>
         <SingleProject opts={hotspotsOpts}/>
       </div>
