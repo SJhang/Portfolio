@@ -58,6 +58,7 @@ class Intro extends React.Component {
   }
 
   handleClick(e) {
+    e.preventDefault();
     clearInterval(this.interval);
     this.updateClassList();
   };
