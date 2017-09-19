@@ -9,7 +9,7 @@ const Projects = ({scrollTo}) => {
   const directToLive = (url) => window.open(url);
 
   const meetupGithub = "https://github.com/SJhang/Meetups";
-  const meetup = "https://meet-ups.herokuapp.com/#/";
+  const meetup = "https://gearup-now.herokuapp.com/";
   const frozenGithub = "https://github.com/SJhang/Frozen-Milk";
   const frozen = "https://sjhang.github.io/Frozen-Milk/";
   const overtrackGithub = "https://github.com/Sebastiansc/Overtrack";
@@ -23,8 +23,8 @@ const Projects = ({scrollTo}) => {
 
   const meetupOpts = {
     title: "MeetUps",
-    directToGithub: () => directToMeetupGithub(),
-    directToLive: () => directToMeetup(),
+    directToGithub: () => directToGithub(meetupGithub),
+    directToLive: () => directToLive(meetup),
     blurb: "Meetups is a full stack single-page web application. It is a social platform inspired by www.meetup.com. Allow users create account, create groups and events to socialize with people with similar interest. The client will automatically update the user's location to find events nearby.",
     assets: [
       "Ruby", "Rails", "JavaScript", "jQuery", "ReactJS",
