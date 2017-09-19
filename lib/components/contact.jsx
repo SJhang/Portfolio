@@ -20,6 +20,7 @@ const Contact = ({scrollTo}) => {
         </div>
         <div className="contact-spec">
           <i className="fa fa-map-marker fa-3x animated bounce" aria-hidden="true"></i>
+          <h4>Austin, TX</h4>
           <h4>San Francisco, CA</h4>
         </div>
         <div className="contact-spec" onClick={() => handlePhoneCall()}>

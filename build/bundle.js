@@ -23934,6 +23934,11 @@ var Contact = function Contact(_ref) {
         _react2.default.createElement(
           "h4",
           null,
+          "Austin, TX"
+        ),
+        _react2.default.createElement(
+          "h4",
+          null,
           "San Francisco, CA"
         )
       ),
